@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Samyuktha Wuyyuru portfolio with Apple Glass styling, highlighting software work across trucking, healthcare, and telecommunications."
+    />
+    <meta name="theme-color" content="#d8e5f4" />
+    <title>Samyuktha Wuyyuru | Portfolio</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Syne:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="backdrop" aria-hidden="true">
+      <div class="aura aura-one"></div>
+      <div class="aura aura-two"></div>
+      <div class="noise"></div>
+    </div>
+
+    <header class="site-header glass" id="top">
+      <a class="brand" href="#top" aria-label="Home">SW</a>
+      <button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="nav-list">
+        Menu
+      </button>
+      <nav>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#approach">How I Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" class="hero section reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">Samyuktha Wuyyuru</p>
+          <h1>Software Engineer</h1>
+          <p>Building scalable software across trucking, healthcare, and telecom.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#experience">View Experience</a>
+            <a class="btn btn-secondary" href="#contact">Get In Touch</a>
+            <a class="btn btn-secondary" href="resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+        <aside class="hero-glass" data-tilt>
+          <p class="status">At a Glance</p>
+          <h2>Currently at Qued Inc.</h2>
+          <p>Building trucking appointment automation and backend workflows.</p>
+          <ul class="hero-points">
+            <li>Open to software engineer, backend, and cloud roles</li>
+            <li>Domain experience: trucking, healthcare, telecom</li>
+            <li>Software engineer delivering end-to-end products that improve operations, reliability, and customer experience across industries.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section id="story" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">My Story</p>
+          <h2>How my journey into software took shape.</h2>
+        </div>
+        <article class="story-card glass">
+          <p>
+            I’m a backend focused software engineer working on automation and integration heavy systems.
+            I started my career building telecom purchase workflows at Infosys, where I learned how
+            backend decisions affect reliability and customer experience at scale.
+          </p>
+          <p>
+            Wanting more control over implementation and deeper work with code and data led me to pursue
+            my M.S. in Computer Science. During that time, I worked on healthcare data pipelines and
+            dashboards at Astek Diagnostics, where reliability and data quality mattered because the
+            software supported real decisions.
+          </p>
+          <p>
+            Today, I build trucking appointment automation at Qued Inc., focusing on backend services and
+            integrations that reduce manual work and hold up in fast paced operational environments.
+            I enjoy customer facing, problem driven work and continue strengthening my fundamentals in
+            system design and data structures.
+          </p>
+        </article>
+      </section>
+
+      <section id="experience" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Professional Experience</p>
+          <h2>Recent roles and domain experience.</h2>
+          <p>Click a role to expand details.</p>
+        </div>
+        <div class="feature-strip exp-scroll glass">
+          <article>
+            <button class="exp-toggle" aria-expanded="false" aria-controls="work-qued">
+              <span class="exp-title">Software Engineer | Qued Inc.</span>
+              <span class="meta">Aug 2024 - Present | Broadlands, VA</span>
+              <span class="exp-summary">Trucking scheduling and appointment automation workflows.</span>
+            </button>
+            <ul id="work-qued" class="exp-details" hidden>
+              <li><strong>Stack:</strong> Python, AWS, Terraform, REST APIs.</li>
+              <li>Reduced manual response time by 60% with workflow automation.</li>
+              <li>Improved query reliability by 25% through Prisma ORM migration.</li>
+              <li>Integrated LLM workflows to automate appointment workflows across logistics operations.</li>
+            </ul>
+          </article>
+          <article>
+            <button class="exp-toggle" aria-expanded="false" aria-controls="work-astek">
+              <span class="exp-title">Engineering Intern and Co-op | Astek Diagnostics</span>
+              <span class="meta">Jun 2023 - Dec 2023 | Baltimore, MD</span>
+              <span class="exp-summary">Healthcare systems for patient data processing and reliability.</span>
+            </button>
+            <ul id="work-astek" class="exp-details" hidden>
+              <li><strong>Stack:</strong> React, Node.js, PostgreSQL, CI/CD.</li>
+              <li>Improved retention by 10% using reusable React components.</li>
+              <li>Reduced downtime by 30% with production alerting workflows.</li>
+              <li>Cut data delivery latency by 40% through backend pipeline improvements.</li>
+            </ul>
+          </article>
+          <article>
+            <button class="exp-toggle" aria-expanded="false" aria-controls="work-umbc">
+              <span class="exp-title">Graduate Assistant | UMBC</span>
+              <span class="meta">Jan 2023 - May 2024 | Baltimore, MD</span>
+              <span class="exp-summary">Supported student learning and instructional delivery in computer science coursework.</span>
+            </button>
+            <ul id="work-umbc" class="exp-details" hidden>
+              <li><strong>Focus:</strong> Mentoring, lab support, and assessments.</li>
+              <li>Supported 100+ students through labs, office hours, grading, and assessments.</li>
+              <li>Helped improve learning outcomes through structured academic guidance.</li>
+              <li>Balanced graduate teaching responsibilities alongside technical project work.</li>
+            </ul>
+          </article>
+          <article>
+            <button class="exp-toggle" aria-expanded="false" aria-controls="work-infosys">
+              <span class="exp-title">Software Development Engineer | Infosys Ltd.</span>
+              <span class="meta">Dec 2020 - Oct 2021 | Hyderabad, India</span>
+              <span class="exp-summary">Telecom platform flows for customer plan purchases.</span>
+            </button>
+            <ul id="work-infosys" class="exp-details" hidden>
+              <li><strong>Stack:</strong> Pega, SOAP, REST, SQL.</li>
+              <li>Built REST and SOAP integrations for telecom product workflows.</li>
+              <li>Improved payment and activation processing time by 40%.</li>
+              <li>Increased enterprise data accessibility by 70% with SQL optimization.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Skills</p>
+          <h2>Tech Stack</h2>
+        </div>
+        <div class="skills-layout">
+          <article class="skill-group glass">
+            <h3>Backend and APIs</h3>
+            <ul class="skill-list">
+              <li>Python, FastAPI, Flask</li>
+              <li>RESTful APIs, JWT auth, OAuth basics</li>
+              <li>OpenAPI / Swagger, Postman</li>
+            </ul>
+          </article>
+
+          <article class="skill-group glass">
+            <h3>Databases and Data</h3>
+            <ul class="skill-list">
+              <li>PostgreSQL, MySQL, DynamoDB, MongoDB</li>
+              <li>Redis caching</li>
+              <li>SQL optimization, indexing, transactions</li>
+            </ul>
+          </article>
+
+          <article class="skill-group glass">
+            <h3>Cloud and Infrastructure</h3>
+            <ul class="skill-list">
+              <li>AWS (EC2, Lambda, S3, SQS, IAM, VPC)</li>
+              <li>Terraform, AWS CDK</li>
+              <li>Event-driven and async processing fundamentals</li>
+            </ul>
+          </article>
+
+          <article class="skill-group glass">
+            <h3>DevOps and Reliability</h3>
+            <ul class="skill-list">
+              <li>Docker, Docker Compose, GitHub Actions, CI/CD</li>
+              <li>Structured logging, monitoring, alerting</li>
+              <li>Testing, performance tuning, production debugging</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="approach" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">How I Work</p>
+          <h2>What My Team Can Expect.</h2>
+        </div>
+        <article class="skill-group glass skill-group-compact">
+          <ul class="skill-list">
+            <li>Translate business requirements into practical software solutions.</li>
+            <li>Collaborate closely with product, design, and cross-functional teams.</li>
+            <li>Comfortable in customer-facing roles with clear, empathetic communication.</li>
+            <li>Thrive in dynamic environments and adapt quickly as priorities evolve.</li>
+            <li>Communicate clearly through documentation and code reviews.</li>
+            <li>Prioritize reliability, ownership, and measurable delivery outcomes.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="beyond-work" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Beyond Work</p>
+          <h2>Off the clock.</h2>
+        </div>
+        <article class="lifestyle-card glass">
+          <p class="lifestyle-intro">
+            Outside work, I try to keep life active, curious, and creative.
+          </p>
+          <ul class="lifestyle-points">
+            <li><strong>Move:</strong> yoga, dance, and gym sessions.</li>
+            <li><strong>Explore:</strong> traveling and hiking whenever I can.</li>
+            <li><strong>Create:</strong> cooking and small creative interests.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <div class="contact-card glass">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's connect.</h2>
+          <p class="contact-note">Open to software engineering opportunities and collaborations.</p>
+          <a class="contact-email" href="mailto:swuyyuru12@gmail.com">swuyyuru12@gmail.com</a>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:swuyyuru12@gmail.com">Email Me</a>
+            <a class="btn btn-secondary" href="resume.pdf" download>Download Resume</a>
+            <a class="btn btn-secondary" href="https://github.com/swuyyuru24" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/samyuktha-wuyyuru/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Samyuktha Wuyyuru.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "Samyuktha Wuyyuru Portfolio",
+  "short_name": "SamPortfolio",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0f1f1b",
+  "background_color": "#f4f1e7",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
