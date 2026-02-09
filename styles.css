@@ -647,9 +647,9 @@ main {
   }
 
   .hero-avatar-inline {
-    width: 76px;
-    height: 76px;
-    flex-basis: 76px;
+    width: 56px;
+    height: 56px;
+    flex-basis: 56px;
   }
 }
 
