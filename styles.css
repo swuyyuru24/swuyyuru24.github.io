@@ -194,6 +194,12 @@ main {
   align-items: center;
   gap: 0.72rem;
   max-width: none;
+  margin-bottom: 0.55rem;
+  line-height: 1.2;
+}
+
+.hero-copy .hero-title + p {
+  margin-top: 0.45rem;
 }
 
 .hero-copy p {
