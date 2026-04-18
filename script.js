@@ -72,3 +72,25 @@ const yearNode = document.getElementById("year");
 if (yearNode) {
   yearNode.textContent = String(new Date().getFullYear());
 }
+
+// Scroll spy — highlight active nav link
+const spySections = document.querySelectorAll("section[id]");
+const spyLinks = document.querySelectorAll(".nav-list a");
+
+if (spySections.length && spyLinks.length) {
+  const spyObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        spyLinks.forEach((link) => {
+          link.classList.toggle(
+            "active",
+            link.getAttribute("href") === `#${entry.target.id}`
+          );
+        });
+      });
+    },
+    { rootMargin: "-35% 0px -55% 0px" }
+  );
+  spySections.forEach((s) => spyObserver.observe(s));
+}
