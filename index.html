@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#d8e5f4" />
+    <meta name="theme-color" content="#060614" />
     <title>Samyuktha Wuyyuru | Portfolio</title>
     <link rel="manifest" href="manifest.json" />
     <link rel="icon" type="image/svg+xml" href="/icon.svg?v=2" />
@@ -12,211 +12,340 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Syne:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Instrument+Sans:wght@400;500;600;700&family=Syne:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
+    <!-- ── Start Screen ─────────────────────────────────── -->
+    <div id="start-screen" class="start-screen" role="dialog" aria-modal="true" aria-label="Game start screen">
+      <div class="start-inner">
+        <p class="start-label">PORTFOLIO RPG · v2025</p>
+        <h1 class="start-name">SAMYUKTHA<br>WUYYURU</h1>
+        <p class="start-class">Software Engineer — Backend &amp; AI · LVL 2</p>
+        <div class="start-bars">
+          <div class="hud-bar-row">
+            <span class="hud-label hp">HP</span>
+            <div class="hud-bar"><div class="hud-fill hp-fill" style="width:100%"></div></div>
+          </div>
+          <div class="hud-bar-row">
+            <span class="hud-label xp">XP</span>
+            <div class="hud-bar"><div class="hud-fill xp-fill" style="width:80%"></div></div>
+          </div>
+        </div>
+        <p class="start-prompt">▶ PRESS ANY KEY TO CONTINUE</p>
+      </div>
+    </div>
+
+    <!-- ── CRT Scanlines ────────────────────────────────── -->
+    <div class="crt-overlay" aria-hidden="true"></div>
+
+    <!-- ── Backdrop ─────────────────────────────────────── -->
     <div class="backdrop" aria-hidden="true">
       <div class="aura aura-one"></div>
       <div class="aura aura-two"></div>
-      <div class="noise"></div>
     </div>
 
-    <header class="site-header glass" id="top">
-      <a class="brand" href="#top" aria-label="Home">SW</a>
+    <header class="site-header" id="top">
+      <div class="brand-group">
+        <a class="brand" href="#top" aria-label="Home">SW</a>
+        <span class="level-badge">LVL 2</span>
+      </div>
       <button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="nav-list">
-        Menu
+        MENU
       </button>
       <nav>
         <ul id="nav-list" class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#story">Story</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#approach">How I Work</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">Bio</a></li>
+          <li><a href="#story">Origin</a></li>
+          <li><a href="#experience">Quests</a></li>
+          <li><a href="#projects">Skills</a></li>
+          <li><a href="#skills">Stats</a></li>
+          <li><a href="#approach">Traits</a></li>
+          <li><a href="#contact">Connect</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+
+      <!-- ── Hero / Character Screen ───────────────────── -->
       <section id="about" class="hero section reveal">
-        <div class="hero-copy">
-          <p class="eyebrow">Samyuktha Wuyyuru</p>
-          <h1 class="hero-title gradient-text">Software Engineer</h1>
-          <p>Building scalable software across trucking, healthcare, and telecom.</p>
-          <div class="hero-badges">
-            <span class="hero-badge">&#128205; Broadlands, VA</span>
-            <span class="hero-badge hero-badge-open">&#128994; Open to work</span>
+        <div class="hero-hud glass">
+          <div class="hud-top">
+            <div class="hud-name-block">
+              <p class="hud-player-label">PLAYER 1</p>
+              <h1 class="hud-name">Samyuktha Wuyyuru</h1>
+              <p class="hud-class"><span>Software Engineer — Backend &amp; AI</span></p>
+            </div>
+            <div class="hud-level-block">
+              <div class="hud-level-ring">2</div>
+              <p class="hud-level-label">LVL</p>
+            </div>
           </div>
+
+          <div class="hud-stats">
+            <div class="hud-bar-row">
+              <span class="hud-label hp">HP</span>
+              <div class="hud-bar"><div class="hud-fill hp-fill" style="width:100%"></div></div>
+              <span class="hud-val">100/100</span>
+            </div>
+            <div class="hud-bar-row">
+              <span class="hud-label mp">MP</span>
+              <div class="hud-bar"><div class="hud-fill mp-fill" style="width:100%"></div></div>
+              <span class="hud-val">100/100</span>
+            </div>
+            <div class="hud-bar-row">
+              <span class="hud-label xp">XP</span>
+              <div class="hud-bar"><div class="hud-fill xp-fill" style="width:80%"></div></div>
+              <span class="hud-val">3200/4000</span>
+            </div>
+          </div>
+
+          <div class="hud-info">
+            <span class="hud-badge">&#128205; United States</span>
+            <span class="hud-badge hud-badge-open">&#9679; OPEN TO WORK</span>
+            <span class="hud-badge">&#9876; 3+ Years EXP</span>
+          </div>
+
+          <p class="hud-bio">3+ years building scalable backend systems and cloud infrastructure across trucking, healthcare, and telecom.</p>
+
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#experience">View Experience</a>
-            <a class="btn btn-secondary" href="#contact">Get In Touch</a>
-            <a class="btn btn-secondary" href="resume.pdf" download>Download Resume</a>
+            <a class="btn btn-primary" href="#experience">&#9654; Quest Log</a>
+            <a class="btn btn-secondary" href="#contact">&#9993; Send Message</a>
           </div>
+          <p class="terminal-hint-hud">press <kbd>T</kbd> to open terminal</p>
         </div>
       </section>
 
+      <!-- ── Origin Story ──────────────────────────────── -->
       <section id="story" class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">My Story</p>
-          <h2>How my journey into software took shape.</h2>
+          <p class="eyebrow">Origin Story</p>
+          <h2>How I got here.</h2>
         </div>
-        <article class="story-card glass">
-          <p>
-            I’m a backend focused software engineer working on automation and integration heavy systems.
-            I started my career building telecom purchase workflows at Infosys, where I learned how
-            backend decisions affect reliability and customer experience at scale.
-          </p>
-          <p>
-            Wanting more control over implementation and deeper work with code and data led me to pursue
-            my M.S. in Computer Science. During that time, I worked on healthcare data pipelines and
-            dashboards at Astek Diagnostics, where reliability and data quality mattered because the
-            software supported real decisions.
-          </p>
-          <p>
-            Today, I build trucking appointment automation at Qued Inc., focusing on backend services and
-            integrations that reduce manual work and hold up in fast paced operational environments.
-            I enjoy customer facing, problem driven work and continue strengthening my fundamentals in
-            system design and data structures.
-          </p>
-        </article>
+        <div class="dialogue-box glass">
+          <div class="dialogue-portrait">
+            <div class="portrait-frame">SW</div>
+            <p class="portrait-name">Samyuktha</p>
+          </div>
+          <div class="dialogue-text">
+            <p>
+              I'm a backend focused software engineer working on automation and integration heavy systems.
+              I started my career building telecom purchase workflows at Infosys, where I learned how
+              backend decisions affect reliability and customer experience at scale.
+            </p>
+            <p>
+              Wanting more control over implementation and deeper work with code and data led me to pursue
+              my M.S. in Computer Science. During that time, I worked on healthcare data pipelines and
+              dashboards at Astek Diagnostics, where reliability and data quality mattered because the
+              software supported real decisions.
+            </p>
+            <p>
+              Today, I build trucking appointment automation at Qued Inc., focusing on backend services and
+              integrations that reduce manual work and hold up in fast paced operational environments.
+              I enjoy customer facing, problem driven work and continue strengthening my fundamentals in
+              system design and data structures.
+            </p>
+          </div>
+        </div>
       </section>
 
+      <!-- ── Quest Log / Experience ────────────────────── -->
       <section id="experience" class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">Professional Experience</p>
-          <h2>Recent roles and domain experience.</h2>
-          <p>Click a role to expand details.</p>
+          <p class="eyebrow">Quest Log</p>
+          <h2>Completed missions.</h2>
+          <p>Select a quest to expand details.</p>
         </div>
-        <div class="feature-strip exp-scroll glass">
-          <article>
+        <div class="quest-list">
+          <article class="quest-card glass">
             <button class="exp-toggle" aria-expanded="false" aria-controls="work-qued">
-              <span class="exp-title">Software Engineer | Qued Inc.</span>
-              <span class="exp-chevron" aria-hidden="true">&#8964;</span>
-              <span class="meta">Aug 2024 – Present · Broadlands, VA</span>
-              <span class="exp-summary">Trucking scheduling and appointment automation workflows.</span>
+              <div class="quest-header">
+                <span class="quest-status active">&#9654; IN PROGRESS</span>
+                <span class="quest-icon" aria-hidden="true">🚛</span>
+                <span class="quest-title">Software Engineer | Qued Inc.</span>
+                <span class="exp-chevron" aria-hidden="true">&#9662;</span>
+              </div>
+              <span class="meta">Aug 2024 – Present · Virginia, USA</span>
+              <span class="exp-summary">Appointment orchestration, event-driven automation, and backend reliability.</span>
             </button>
             <ul id="work-qued" class="exp-details" hidden>
-              <li><strong>Stack:</strong> Python, AWS, Terraform, REST APIs.</li>
-              <li>Reduced manual response time by 60% with workflow automation.</li>
-              <li>Improved query reliability by 25% through Prisma ORM migration.</li>
-              <li>Integrated LLM workflows to automate appointment workflows across logistics operations.</li>
+              <li>Built event-driven automation on AWS Lambda, reducing manual effort by 20%.</li>
+              <li>Implemented Redis caching with TTL-based invalidation, significantly reducing latency.</li>
+              <li>Refactored PostgreSQL access to Django ORM, cutting query-related incidents by 15%.</li>
+              <li>Containerized microservices with Docker and CI/CD, accelerating safe releases by 20%.</li>
             </ul>
           </article>
-          <article>
+
+          <article class="quest-card glass">
             <button class="exp-toggle" aria-expanded="false" aria-controls="work-astek">
-              <span class="exp-title">Engineering Intern & Co-op | Astek Diagnostics</span>
-              <span class="exp-chevron" aria-hidden="true">&#8964;</span>
+              <div class="quest-header">
+                <span class="quest-status done">&#10003; COMPLETED</span>
+                <span class="quest-icon" aria-hidden="true">🧬</span>
+                <span class="quest-title">Software Developer Intern &amp; Co-op | Astek Diagnostics</span>
+                <span class="exp-chevron" aria-hidden="true">&#9662;</span>
+              </div>
               <span class="meta">Jun 2023 – Dec 2023 · Baltimore, MD</span>
-              <span class="exp-summary">Healthcare systems for patient data processing and reliability.</span>
+              <span class="exp-summary">Real-time patient data processing platform and analytics infrastructure.</span>
             </button>
             <ul id="work-astek" class="exp-details" hidden>
-              <li><strong>Stack:</strong> React, Node.js, PostgreSQL, CI/CD.</li>
-              <li>Improved retention by 10% using reusable React components.</li>
-              <li>Reduced downtime by 30% with production alerting workflows.</li>
-              <li>Cut data delivery latency by 40% through backend pipeline improvements.</li>
+              <li>Engineered a real-time data processing platform for patient analytics, improving throughput by 30%.</li>
+              <li>Boosted user retention 10% through reusable React components across the company portal.</li>
+              <li>Built ETL workflows to ingest, transform, and persist high-volume patient data.</li>
+              <li>Developed internal APIs and datasets enabling self-serve analytics dashboards across teams.</li>
+              <li>Implemented HIPAA data handling with least-privilege access and secure transfer for clinical datasets.</li>
+              <li>Automated job scheduling and infrastructure deployments with Python and shell scripts.</li>
             </ul>
           </article>
-          <article>
-            <button class="exp-toggle" aria-expanded="false" aria-controls="work-umbc">
-              <span class="exp-title">Graduate Assistant | UMBC</span>
-              <span class="exp-chevron" aria-hidden="true">&#8964;</span>
-              <span class="meta">Jan 2023 – May 2024 · Baltimore, MD</span>
-              <span class="exp-summary">Supported student learning and instructional delivery in computer science coursework.</span>
-            </button>
-            <ul id="work-umbc" class="exp-details" hidden>
-              <li><strong>Focus:</strong> Mentoring, lab support, and assessments.</li>
-              <li>Supported 100+ students through labs, office hours, grading, and assessments.</li>
-              <li>Helped improve learning outcomes through structured academic guidance.</li>
-              <li>Balanced graduate teaching responsibilities alongside technical project work.</li>
-            </ul>
-          </article>
-          <article>
+
+          <article class="quest-card glass">
             <button class="exp-toggle" aria-expanded="false" aria-controls="work-infosys">
-              <span class="exp-title">Software Development Engineer | Infosys Ltd.</span>
-              <span class="exp-chevron" aria-hidden="true">&#8964;</span>
+              <div class="quest-header">
+                <span class="quest-status done">&#10003; COMPLETED</span>
+                <span class="quest-icon" aria-hidden="true">📡</span>
+                <span class="quest-title">Associate Software Engineer | Infosys Ltd.</span>
+                <span class="exp-chevron" aria-hidden="true">&#9662;</span>
+              </div>
               <span class="meta">Dec 2020 – Oct 2021 · Hyderabad, India</span>
-              <span class="exp-summary">Telecom platform flows for customer plan purchases.</span>
+              <span class="exp-summary">Telecom REST API integrations, payment workflows, and backend optimization.</span>
             </button>
             <ul id="work-infosys" class="exp-details" hidden>
-              <li><strong>Stack:</strong> Pega, SOAP, REST, SQL.</li>
-              <li>Built REST and SOAP integrations for telecom product workflows.</li>
-              <li>Improved payment and activation processing time by 40%.</li>
-              <li>Increased enterprise data accessibility by 70% with SQL optimization.</li>
+              <li>Built REST API integrations in Pega for secure payments and service activation, reducing processing times by 20%.</li>
+              <li>Improved dashboard performance 15% by optimizing SQL queries, reducing joins, and tuning indexing.</li>
+              <li>Optimized backend workflows for subscription management, enhancing system stability by 15%.</li>
+              <li>Reduced security incidents 5% by implementing OAuth 2.0 and role-based access control.</li>
+              <li>Implemented rate limiting for external service integrations to improve transactional reliability.</li>
+              <li>Led code reviews and testing to ensure quality across diverse modules.</li>
             </ul>
           </article>
         </div>
       </section>
 
+      <!-- ── Inventory / Projects ──────────────────────── -->
+      <section id="projects" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Inventory · Rare Artifacts</p>
+          <h2>Items forged in battle.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card glass">
+            <div class="item-rarity rare">&#9670; RARE</div>
+            <h3>Expense Workflow Automation Platform</h3>
+            <p>Policy-driven expense validation and automatic approval routing derived from organizational hierarchy, with audit-ready state tracking.</p>
+            <ul class="tag-list">
+              <li><span class="tag">FastAPI</span></li>
+              <li><span class="tag">PostgreSQL</span></li>
+              <li><span class="tag">Redis</span></li>
+              <li><span class="tag">AWS SQS</span></li>
+            </ul>
+          </article>
+          <article class="project-card glass">
+            <div class="item-rarity epic">&#9670; EPIC</div>
+            <h3>Real-Time Chat Emotion Intelligence</h3>
+            <p>Distributed chat emotion prediction system with transformer-based NLP inference, event-driven processing, and OIDC/JWT authentication.</p>
+            <ul class="tag-list">
+              <li><span class="tag">Go</span></li>
+              <li><span class="tag">Kafka</span></li>
+              <li><span class="tag">DynamoDB</span></li>
+              <li><span class="tag">Python</span></li>
+              <li><span class="tag">OIDC/JWT</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- ── Character Stats / Skills ─────────────────── -->
       <section id="skills" class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">Skills</p>
-          <h2>Tech Stack</h2>
+          <p class="eyebrow">Character Stats</p>
+          <h2>Abilities &amp; Tech Tree</h2>
         </div>
         <div class="skills-layout">
           <article class="skill-group glass">
-            <h3>Backend and APIs</h3>
-            <ul class="tag-list">
-              <li><span class="tag">Python</span></li>
-              <li><span class="tag">FastAPI</span></li>
-              <li><span class="tag">Flask</span></li>
-              <li><span class="tag">RESTful APIs</span></li>
-              <li><span class="tag">JWT Auth</span></li>
-              <li><span class="tag">OAuth</span></li>
-              <li><span class="tag">OpenAPI</span></li>
-              <li><span class="tag">Postman</span></li>
+            <h3>&#9876; Languages</h3>
+            <ul class="skill-bars-list">
+              <li><span class="sbl-name">Python</span><div class="sbl-track"><div class="sbl-fill" data-pct="95"></div></div></li>
+              <li><span class="sbl-name">Go</span><div class="sbl-track"><div class="sbl-fill" data-pct="80"></div></div></li>
+              <li><span class="sbl-name">Java</span><div class="sbl-track"><div class="sbl-fill" data-pct="75"></div></div></li>
+              <li><span class="sbl-name">SQL</span><div class="sbl-track"><div class="sbl-fill" data-pct="90"></div></div></li>
+              <li><span class="sbl-name">C++</span><div class="sbl-track"><div class="sbl-fill" data-pct="65"></div></div></li>
+              <li><span class="sbl-name">Bash</span><div class="sbl-track"><div class="sbl-fill" data-pct="78"></div></div></li>
             </ul>
           </article>
 
           <article class="skill-group glass">
-            <h3>Databases and Data</h3>
+            <h3>&#128737; System Design</h3>
+            <ul class="tag-list">
+              <li><span class="tag">Idempotency</span></li>
+              <li><span class="tag">Retry / Backoff</span></li>
+              <li><span class="tag">Async Workflows</span></li>
+              <li><span class="tag">Rate Limiting</span></li>
+              <li><span class="tag">Caching</span></li>
+              <li><span class="tag">Auth &amp; OAuth 2.0</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-group glass">
+            <h3>&#9729; Cloud &amp; DevOps</h3>
+            <ul class="tag-list">
+              <li><span class="tag">AWS Lambda</span></li>
+              <li><span class="tag">S3</span></li>
+              <li><span class="tag">API Gateway</span></li>
+              <li><span class="tag">CloudWatch</span></li>
+              <li><span class="tag">ECS</span></li>
+              <li><span class="tag">IAM</span></li>
+              <li><span class="tag">Terraform</span></li>
+              <li><span class="tag">Docker</span></li>
+              <li><span class="tag">CI/CD</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-group glass">
+            <h3>&#128451; Datastores &amp; Messaging</h3>
             <ul class="tag-list">
               <li><span class="tag">PostgreSQL</span></li>
               <li><span class="tag">MySQL</span></li>
               <li><span class="tag">DynamoDB</span></li>
               <li><span class="tag">MongoDB</span></li>
               <li><span class="tag">Redis</span></li>
-              <li><span class="tag">SQL Optimization</span></li>
-              <li><span class="tag">Indexing</span></li>
-            </ul>
-          </article>
-
-          <article class="skill-group glass">
-            <h3>Cloud and Infrastructure</h3>
-            <ul class="tag-list">
-              <li><span class="tag">AWS EC2</span></li>
-              <li><span class="tag">Lambda</span></li>
-              <li><span class="tag">S3</span></li>
+              <li><span class="tag">Kafka</span></li>
               <li><span class="tag">SQS</span></li>
-              <li><span class="tag">IAM</span></li>
-              <li><span class="tag">VPC</span></li>
-              <li><span class="tag">Terraform</span></li>
-              <li><span class="tag">AWS CDK</span></li>
             </ul>
           </article>
 
           <article class="skill-group glass">
-            <h3>DevOps and Reliability</h3>
+            <h3>&#128295; Tooling</h3>
             <ul class="tag-list">
-              <li><span class="tag">Docker</span></li>
-              <li><span class="tag">Docker Compose</span></li>
-              <li><span class="tag">GitHub Actions</span></li>
-              <li><span class="tag">CI/CD</span></li>
-              <li><span class="tag">Monitoring</span></li>
-              <li><span class="tag">Structured Logging</span></li>
-              <li><span class="tag">Performance Tuning</span></li>
+              <li><span class="tag">Git</span></li>
+              <li><span class="tag">GitHub</span></li>
+              <li><span class="tag">Postman</span></li>
+              <li><span class="tag">VSCode</span></li>
+              <li><span class="tag">PyCharm</span></li>
+            </ul>
+          </article>
+
+          <article class="skill-group glass">
+            <h3>&#129302; LLMs &amp; AI</h3>
+            <ul class="tag-list">
+              <li><span class="tag">Transformer Models</span></li>
+              <li><span class="tag">NLP Pipelines</span></li>
+              <li><span class="tag">Model Inference</span></li>
+              <li><span class="tag">OpenAI API</span></li>
+              <li><span class="tag">Claude</span></li>
+              <li><span class="tag">Codex</span></li>
             </ul>
           </article>
         </div>
       </section>
 
+      <!-- ── Passive Skills / Approach ─────────────────── -->
       <section id="approach" class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">How I Work</p>
-          <h2>What My Team Can Expect.</h2>
+          <p class="eyebrow">Soft Stats</p>
+          <h2>What it's like to work with me.</h2>
         </div>
         <div class="approach-grid">
           <div class="approach-item glass">
@@ -241,47 +370,90 @@
           </div>
           <div class="approach-item glass">
             <span class="approach-icon">&#127919;</span>
-            <p>Prioritize reliability, ownership, and measurable delivery outcomes.</p>
+            <p>I own things end to end — build it, ship it, watch it in prod.</p>
           </div>
         </div>
       </section>
 
+      <!-- ── Offline Activities ────────────────────────── -->
       <section id="beyond-work" class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">Beyond Work</p>
-          <h2>Off the clock.</h2>
+          <p class="eyebrow">Offline Activities</p>
+          <h2>Side quests.</h2>
         </div>
         <article class="lifestyle-card glass">
-          <p class="lifestyle-intro">
-            Outside work, I try to keep life active, curious, and creative.
-          </p>
-          <ul class="lifestyle-points">
-            <li><strong>Move:</strong> yoga, dance, and gym sessions.</li>
-            <li><strong>Explore:</strong> traveling and hiking whenever I can.</li>
-            <li><strong>Create:</strong> cooking and small creative interests.</li>
-          </ul>
+          <div class="lifestyle-grid">
+            <div class="lifestyle-item">
+              <span class="lifestyle-icon">🏋️‍♀️</span>
+              <p class="lifestyle-label">Active</p>
+              <p class="lifestyle-desc">Daily quests: run, lift, repeat.</p>
+            </div>
+            <div class="lifestyle-item">
+              <span class="lifestyle-icon">🗺️</span>
+              <p class="lifestyle-label">Explorer</p>
+              <p class="lifestyle-desc">Traveling and hiking whenever possible.</p>
+            </div>
+            <div class="lifestyle-item">
+              <span class="lifestyle-icon">🍳</span>
+              <p class="lifestyle-label">Creator</p>
+              <p class="lifestyle-desc">Cooking, dancing, and the occasional creative rabbit hole.</p>
+            </div>
+          </div>
         </article>
       </section>
 
+      <!-- ── Contact / Guild Recruitment ──────────────── -->
       <section id="contact" class="section reveal">
         <div class="contact-card glass">
-          <p class="eyebrow">Contact</p>
-          <h2>Let's connect.</h2>
+          <p class="eyebrow">Guild Recruitment</p>
+          <h2>Open to Opportunities.</h2>
           <p class="contact-note">Open to software engineering opportunities and collaborations.</p>
           <a class="contact-email" href="mailto:swuyyuru12@gmail.com">swuyyuru12@gmail.com</a>
           <div class="contact-actions">
-            <a class="btn btn-primary" href="mailto:swuyyuru12@gmail.com">Email Me</a>
-            <a class="btn btn-secondary" href="resume.pdf" download>Download Resume</a>
-            <a class="btn btn-secondary" href="https://github.com/swuyyuru24" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/samyuktha-wuyyuru/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn btn-primary" href="mailto:swuyyuru12@gmail.com">&#9993; Send Message</a>
+            <a class="btn btn-secondary" href="https://github.com/swuyyuru24" target="_blank" rel="noreferrer">&#9000; GitHub</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/samyuktha-wuyyuru/" target="_blank" rel="noreferrer">&#128279; LinkedIn</a>
           </div>
         </div>
       </section>
+
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Samyuktha Wuyyuru.</p>
+      <p>&#169; <span id="year"></span> Samyuktha Wuyyuru &nbsp;&#183;&nbsp; crafted with code + caffeine &nbsp;&#183;&nbsp; <span class="footer-hint">press <kbd>`</kbd> for terminal</span></p>
     </footer>
+
+<!-- ── Terminal ───────────────────────────────────── -->
+    <div id="terminal" class="terminal" hidden aria-label="Portfolio terminal" role="complementary">
+      <div class="terminal-titlebar">
+        <div class="terminal-dots">
+          <span class="terminal-dot dot-red" id="terminal-close-dot" title="Close"></span>
+          <span class="terminal-dot dot-yellow"></span>
+          <span class="terminal-dot dot-green"></span>
+        </div>
+        <span class="terminal-title">samyuktha@portfolio — bash</span>
+        <span class="terminal-hint">press T to toggle</span>
+      </div>
+      <div class="terminal-body" id="terminal-body">
+        <div class="terminal-output" id="terminal-output">
+          <p class="t-line t-muted">Portfolio Terminal v1.0 — type <span class="t-cmd">help</span> for available commands.</p>
+        </div>
+        <div class="terminal-input-row">
+          <span class="t-prompt" aria-hidden="true">samyuktha@portfolio:~$&nbsp;</span>
+          <input id="terminal-input" class="terminal-input" type="text"
+                 autocomplete="off" spellcheck="false" aria-label="Terminal input" />
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Achievement Popup ──────────────────────────── -->
+    <div id="achievement" class="achievement" aria-live="polite" aria-atomic="true" hidden>
+      <span class="achievement-icon">&#127942;</span>
+      <div>
+        <p class="achievement-title">ACHIEVEMENT UNLOCKED</p>
+        <p class="achievement-desc" id="achievement-desc"></p>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
