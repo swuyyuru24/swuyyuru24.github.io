@@ -1382,6 +1382,23 @@ main {
   border: 1px solid rgba(196, 181, 253, 0.6);
 }
 
+.item-rarity.legendary {
+  background: rgba(254, 243, 199, 0.9);
+  color: #b45309;
+  border: 1px solid rgba(252, 211, 77, 0.6);
+}
+
+.project-links {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.btn-sm {
+  font-size: 0.65rem;
+  padding: 0.4rem 0.9rem;
+}
+
 /* ── Skill Bars ────────────────────────────────────────── */
 
 .skill-bars-list {
@@ -1831,6 +1848,11 @@ main {
   background:   rgba(76, 29, 149, 0.5);
   color:        #c4b5fd;
   border-color: rgba(196, 181, 253, 0.3);
+}
+.item-rarity.legendary {
+  background:   rgba(120, 53, 15, 0.5);
+  color:        #fcd34d;
+  border-color: rgba(252, 211, 77, 0.3);
 }
 
 /* HUD badges */
