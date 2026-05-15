@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0a2a"/>
+      <stop offset="100%" stop-color="#1a1145"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="340" fill="url(#bg3)" rx="8"/>
+  <!-- Browser chrome -->
+  <rect x="0" y="0" width="600" height="32" fill="#111827" rx="8"/>
+  <rect x="0" y="16" width="600" height="16" fill="#111827"/>
+  <circle cx="18" cy="16" r="5" fill="#ef4444"/>
+  <circle cx="36" cy="16" r="5" fill="#fbbf24"/>
+  <circle cx="54" cy="16" r="5" fill="#22c55e"/>
+  <rect x="180" y="9" width="240" height="14" rx="4" fill="#1f2937"/>
+  <text x="300" y="20" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280">localhost:3000/chat</text>
+  <!-- Sidebar - channels -->
+  <rect x="0" y="32" width="160" height="308" fill="#12082e"/>
+  <text x="16" y="56" font-family="system-ui,sans-serif" font-weight="700" font-size="11" fill="#a78bfa">Channels</text>
+  <rect x="10" y="66" width="140" height="26" rx="5" fill="#7c3aed" opacity="0.2"/>
+  <text x="24" y="83" font-family="system-ui,sans-serif" font-size="10" fill="#c4b5fd"># general</text>
+  <text x="24" y="107" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280"># engineering</text>
+  <text x="24" y="131" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280"># design</text>
+  <text x="24" y="155" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280"># random</text>
+  <text x="16" y="188" font-family="system-ui,sans-serif" font-weight="700" font-size="11" fill="#a78bfa">Online — 4</text>
+  <circle cx="24" cy="206" r="5" fill="#7c3aed"/>
+  <text x="36" y="210" font-family="system-ui,sans-serif" font-size="9" fill="#9ca3af">Alex</text>
+  <circle cx="24" cy="226" r="5" fill="#3b82f6"/>
+  <text x="36" y="230" font-family="system-ui,sans-serif" font-size="9" fill="#9ca3af">Priya</text>
+  <circle cx="24" cy="246" r="5" fill="#22c55e"/>
+  <text x="36" y="250" font-family="system-ui,sans-serif" font-size="9" fill="#9ca3af">Jordan</text>
+  <!-- Chat area -->
+  <rect x="160" y="32" width="310" height="38" fill="#160d36"/>
+  <text x="176" y="56" font-family="system-ui,sans-serif" font-weight="700" font-size="12" fill="#e5e7eb"># general</text>
+  <!-- Messages -->
+  <!-- Message 1 -->
+  <circle cx="180" cy="94" r="14" fill="#3b82f6"/>
+  <text x="180" y="98" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#fff">A</text>
+  <text x="202" y="88" font-family="system-ui,sans-serif" font-weight="600" font-size="10" fill="#e5e7eb">Alex</text>
+  <text x="240" y="88" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280">2:14 PM</text>
+  <text x="202" y="104" font-family="system-ui,sans-serif" font-size="10" fill="#d1d5db">Hey team, just pushed the new API changes!</text>
+  <rect x="202" y="110" width="48" height="18" rx="9" fill="#22c55e" opacity="0.15"/>
+  <text x="226" y="122" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#22c55e">Joy 92%</text>
+  <!-- Message 2 -->
+  <circle cx="180" cy="154" r="14" fill="#7c3aed"/>
+  <text x="180" y="158" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#fff">P</text>
+  <text x="202" y="148" font-family="system-ui,sans-serif" font-weight="600" font-size="10" fill="#e5e7eb">Priya</text>
+  <text x="242" y="148" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280">2:16 PM</text>
+  <text x="202" y="164" font-family="system-ui,sans-serif" font-size="10" fill="#d1d5db">The tests are failing on the staging branch again :(</text>
+  <rect x="202" y="170" width="72" height="18" rx="9" fill="#ef4444" opacity="0.15"/>
+  <text x="238" y="182" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#ef4444">Frustration 78%</text>
+  <!-- Message 3 -->
+  <circle cx="180" cy="214" r="14" fill="#22c55e"/>
+  <text x="180" y="218" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#fff">J</text>
+  <text x="202" y="208" font-family="system-ui,sans-serif" font-weight="600" font-size="10" fill="#e5e7eb">Jordan</text>
+  <text x="248" y="208" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280">2:18 PM</text>
+  <text x="202" y="224" font-family="system-ui,sans-serif" font-size="10" fill="#d1d5db">No worries, I'll take a look. Probably a config issue.</text>
+  <rect x="202" y="230" width="62" height="18" rx="9" fill="#3b82f6" opacity="0.15"/>
+  <text x="233" y="242" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#60a5fa">Calm 85%</text>
+  <!-- Input area -->
+  <rect x="168" y="288" width="292" height="34" rx="8" fill="#1f1145"/>
+  <text x="184" y="310" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">Message #general...</text>
+  <!-- Emotion sidebar -->
+  <rect x="470" y="32" width="130" height="308" fill="#12082e"/>
+  <text x="486" y="56" font-family="system-ui,sans-serif" font-weight="700" font-size="10" fill="#a78bfa">Emotion Analysis</text>
+  <text x="486" y="80" font-family="system-ui,sans-serif" font-size="9" fill="#9ca3af">Channel Mood</text>
+  <!-- Mood bars -->
+  <text x="486" y="102" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280">Joy</text>
+  <rect x="486" y="106" width="98" height="6" rx="3" fill="#1f2937"/>
+  <rect x="486" y="106" width="68" height="6" rx="3" fill="#22c55e"/>
+  <text x="486" y="128" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280">Neutral</text>
+  <rect x="486" y="132" width="98" height="6" rx="3" fill="#1f2937"/>
+  <rect x="486" y="132" width="45" height="6" rx="3" fill="#60a5fa"/>
+  <text x="486" y="154" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280">Frustration</text>
+  <rect x="486" y="158" width="98" height="6" rx="3" fill="#1f2937"/>
+  <rect x="486" y="158" width="28" height="6" rx="3" fill="#ef4444"/>
+  <text x="486" y="180" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280">Surprise</text>
+  <rect x="486" y="184" width="98" height="6" rx="3" fill="#1f2937"/>
+  <rect x="486" y="184" width="15" height="6" rx="3" fill="#fbbf24"/>
+  <!-- Model info -->
+  <rect x="478" y="220" width="114" height="60" rx="8" fill="#1f1145"/>
+  <text x="486" y="238" font-family="system-ui,sans-serif" font-size="8" fill="#a78bfa">NLP Model</text>
+  <text x="486" y="254" font-family="system-ui,sans-serif" font-size="8" fill="#d1d5db">Transformer v2</text>
+  <text x="486" y="270" font-family="system-ui,sans-serif" font-size="8" fill="#22c55e">● Active</text>
+</svg>
