@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0f2440"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#4ade80"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="bar3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="340" fill="url(#bg)" rx="8"/>
+  <!-- Browser chrome -->
+  <rect x="0" y="0" width="600" height="32" fill="#111827" rx="8"/>
+  <rect x="0" y="16" width="600" height="16" fill="#111827"/>
+  <circle cx="18" cy="16" r="5" fill="#ef4444"/>
+  <circle cx="36" cy="16" r="5" fill="#fbbf24"/>
+  <circle cx="54" cy="16" r="5" fill="#22c55e"/>
+  <rect x="180" y="9" width="240" height="14" rx="4" fill="#1f2937"/>
+  <text x="300" y="20" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#6b7280">centsible-app.vercel.app</text>
+  <!-- Sidebar -->
+  <rect x="0" y="32" width="140" height="308" fill="#111827"/>
+  <rect x="16" y="50" width="108" height="28" rx="6" fill="#1f2937"/>
+  <text x="70" y="68" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="700" font-size="12" fill="#22c55e">$ Centsible</text>
+  <rect x="16" y="92" width="108" height="24" rx="4" fill="#22c55e" opacity="0.15"/>
+  <text x="70" y="108" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#22c55e">Dashboard</text>
+  <text x="32" y="136" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">Transactions</text>
+  <text x="32" y="160" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">Budgets</text>
+  <text x="32" y="184" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">Net Worth</text>
+  <text x="32" y="208" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">Split Bills</text>
+  <!-- Main content -->
+  <!-- Balance card -->
+  <rect x="158" y="46" width="200" height="80" rx="10" fill="#1a2744"/>
+  <text x="174" y="68" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">Total Balance</text>
+  <text x="174" y="94" font-family="system-ui,sans-serif" font-weight="700" font-size="22" fill="#e5e7eb">$24,580.42</text>
+  <text x="174" y="114" font-family="system-ui,sans-serif" font-size="9" fill="#22c55e">+12.4% this month</text>
+  <!-- Income card -->
+  <rect x="374" y="46" width="208" height="80" rx="10" fill="#1a2744"/>
+  <text x="390" y="68" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">Monthly Budget</text>
+  <text x="390" y="94" font-family="system-ui,sans-serif" font-weight="700" font-size="22" fill="#e5e7eb">$3,200.00</text>
+  <rect x="390" y="104" width="176" height="6" rx="3" fill="#1f2937"/>
+  <rect x="390" y="104" width="120" height="6" rx="3" fill="url(#bar1)"/>
+  <text x="390" y="120" font-family="system-ui,sans-serif" font-size="9" fill="#6b7280">68% spent</text>
+  <!-- Chart area -->
+  <rect x="158" y="140" width="424" height="140" rx="10" fill="#1a2744"/>
+  <text x="174" y="162" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">Spending Overview</text>
+  <!-- Chart bars -->
+  <rect x="190" y="230" width="28" height="36" rx="3" fill="url(#bar1)" opacity="0.7"/>
+  <rect x="230" y="210" width="28" height="56" rx="3" fill="url(#bar1)" opacity="0.8"/>
+  <rect x="270" y="195" width="28" height="71" rx="3" fill="url(#bar1)"/>
+  <rect x="310" y="220" width="28" height="46" rx="3" fill="url(#bar1)" opacity="0.75"/>
+  <rect x="350" y="200" width="28" height="66" rx="3" fill="url(#bar1)" opacity="0.85"/>
+  <rect x="390" y="185" width="28" height="81" rx="3" fill="url(#bar1)"/>
+  <rect x="430" y="215" width="28" height="51" rx="3" fill="url(#bar1)" opacity="0.7"/>
+  <rect x="470" y="240" width="28" height="26" rx="3" fill="url(#bar1)" opacity="0.6"/>
+  <rect x="510" y="225" width="28" height="41" rx="3" fill="url(#bar1)" opacity="0.8"/>
+  <text x="200" y="258" font-family="system-ui,sans-serif" font-size="8" fill="#4b5563">Jan</text>
+  <text x="270" y="258" font-family="system-ui,sans-serif" font-size="8" fill="#4b5563">Mar</text>
+  <text x="350" y="258" font-family="system-ui,sans-serif" font-size="8" fill="#4b5563">May</text>
+  <text x="430" y="258" font-family="system-ui,sans-serif" font-size="8" fill="#4b5563">Jul</text>
+  <text x="510" y="258" font-family="system-ui,sans-serif" font-size="8" fill="#4b5563">Sep</text>
+  <!-- Recent transactions -->
+  <rect x="158" y="292" width="424" height="36" rx="8" fill="#1a2744"/>
+  <text x="174" y="314" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">Recent: Grocery Store</text>
+  <text x="520" y="314" text-anchor="end" font-family="system-ui,sans-serif" font-size="10" fill="#ef4444">-$42.80</text>
+</svg>

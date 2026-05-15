@@ -1,13 +1,18 @@
 // ── Start Screen ────────────────────────────────────────
 const startScreen = document.getElementById("start-screen");
+const startBtn = document.getElementById("start-btn");
 if (startScreen) {
+  let startDismissed = false;
   const dismissStart = () => {
+    if (startDismissed) return;
+    startDismissed = true;
     startScreen.classList.add("hidden");
   };
-  document.addEventListener("keydown", dismissStart, { once: true });
-  startScreen.addEventListener("pointerdown", dismissStart, { once: true });
+  if (startBtn) startBtn.addEventListener("click", dismissStart);
+  document.addEventListener("keydown", dismissStart);
 }
 
+// ── Mobile Menu ──────────────────────────────────────────
 const menuButton = document.getElementById("menu-button");
 const navList = document.getElementById("nav-list");
 
@@ -25,6 +30,7 @@ if (menuButton && navList) {
   });
 }
 
+// ── Reveal on Scroll ────────────────────────────────────
 const revealNodes = document.querySelectorAll(".reveal");
 const revealObserver = new IntersectionObserver(
   (entries) => {
@@ -39,31 +45,7 @@ const revealObserver = new IntersectionObserver(
 
 revealNodes.forEach((node) => revealObserver.observe(node));
 
-const tiltNodes = document.querySelectorAll("[data-tilt]");
-
-const handleTilt = (event) => {
-  const card = event.currentTarget;
-  const rect = card.getBoundingClientRect();
-  const x = (event.clientX - rect.left) / rect.width;
-  const y = (event.clientY - rect.top) / rect.height;
-  const rotateY = (x - 0.5) * 8;
-  const rotateX = (0.5 - y) * 8;
-
-  card.style.transform = `perspective(900px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg)`;
-};
-
-const resetTilt = (event) => {
-  event.currentTarget.style.transform = "perspective(900px) rotateX(0deg) rotateY(0deg)";
-};
-
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  tiltNodes.forEach((node) => {
-    node.style.transition = "transform 220ms ease";
-    node.addEventListener("pointermove", handleTilt);
-    node.addEventListener("pointerleave", resetTilt);
-  });
-}
-
+// ── Experience Toggles ──────────────────────────────────
 const workToggles = document.querySelectorAll(".exp-toggle");
 workToggles.forEach((toggle) => {
   toggle.addEventListener("click", () => {
@@ -78,6 +60,7 @@ workToggles.forEach((toggle) => {
   });
 });
 
+// ── Footer Year ─────────────────────────────────────────
 const yearNode = document.getElementById("year");
 if (yearNode) {
   yearNode.textContent = String(new Date().getFullYear());
@@ -99,46 +82,7 @@ if (sblFills.length) {
   sblFills.forEach((fill) => sblObserver.observe(fill));
 }
 
-// ── Achievement Popup ───────────────────────────────────
-const achievementEl = document.getElementById("achievement");
-const achievementDesc = document.getElementById("achievement-desc");
-
-const triggerAchievement = (text) => {
-  if (!achievementEl || !achievementDesc) return;
-  achievementDesc.textContent = text;
-  achievementEl.hidden = false;
-  setTimeout(() => {
-    achievementEl.hidden = true;
-  }, 3600);
-};
-
-const achievements = [
-  ["experience", "Quest Log Unlocked"],
-  ["projects",   "Rare Artifacts Discovered"],
-  ["skills",     "Tech Tree Expanded"],
-  ["contact",    "Guild Recruitment Open"],
-];
-
-achievements.forEach(([id, text]) => {
-  const el = document.getElementById(id);
-  if (!el || !achievementEl) return;
-  let fired = false;
-  const obs = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && !fired) {
-          fired = true;
-          setTimeout(() => triggerAchievement(text), 500);
-          obs.unobserve(el);
-        }
-      });
-    },
-    { threshold: 0.35 }
-  );
-  obs.observe(el);
-});
-
-// ── Scroll spy — highlight active nav link ───────────────
+// ── Scroll Spy ──────────────────────────────────────────
 const spySections = document.querySelectorAll("section[id]");
 const spyLinks = document.querySelectorAll(".nav-list a");
 
@@ -182,7 +126,6 @@ const closeTerminal = () => {
   terminal.hidden = true;
 };
 
-// Backtick toggles terminal (unless focus is on another input)
 document.addEventListener("keydown", (e) => {
   if (e.key === "t" && e.target.tagName !== "INPUT" && e.target.tagName !== "TEXTAREA") {
     e.preventDefault();
@@ -230,7 +173,7 @@ const COMMANDS = {
   whoami() {
     tBlank();
     tPrint("Samyuktha Wuyyuru", "t-accent");
-    tPrint("Backend Engineer · LVL 5", "t-yellow");
+    tPrint("Backend Engineer", "t-yellow");
     tPrint('Location:  United States');
     tPrint('Status:    <span class="t-success">● Open to Work</span>');
     tPrint("Experience: 3+ years");
@@ -289,8 +232,9 @@ const COMMANDS = {
         tPrint('  [3]  <span class="t-accent">Infosys Ltd.</span>        Associate Software Engineer Dec 2020–Oct 2021');
         break;
       case "projects":
-        tPrint('  [RARE]  <span class="t-accent">Expense Workflow Automation</span>   FastAPI · PostgreSQL · Redis · SQS');
-        tPrint('  [EPIC]  <span class="t-accent">Chat Emotion Intelligence</span>     Go · Kafka · DynamoDB · Python · OIDC');
+        tPrint('  [1]  <span class="t-accent">Centsible</span>                        Next.js · Supabase · Plaid API · TypeScript');
+        tPrint('  [2]  <span class="t-accent">Expense Workflow Automation</span>      FastAPI · PostgreSQL · Redis · SQS');
+        tPrint('  [3]  <span class="t-accent">Chat Emotion Intelligence</span>        Go · Kafka · DynamoDB · Python · OIDC');
         break;
       default:
         tPrint(`cat: ${args || "(missing argument)"}: No such file`, "t-error");
@@ -316,9 +260,8 @@ const COMMANDS = {
   cd(args) {
     const map = {
       about: "#about", story: "#story", experience: "#experience",
-      quests: "#experience", projects: "#projects", skills: "#skills",
-      stats: "#skills", approach: "#approach", contact: "#contact",
-      passives: "#approach",
+      projects: "#projects", skills: "#skills",
+      approach: "#approach", contact: "#contact",
     };
     const target = map[args?.toLowerCase()];
     if (target) {
@@ -335,7 +278,7 @@ const COMMANDS = {
     tBlank();
     tPrint('        /\\        <span class="t-accent">samyuktha@portfolio</span>');
     tPrint('       /  \\       <span class="t-muted">──────────────────────</span>');
-    tPrint('      / /\\ \\      OS: Portfolio RPG v2025');
+    tPrint('      / /\\ \\      OS: Portfolio v2025');
     tPrint('     / /  \\ \\     Host: GitHub Pages');
     tPrint('    / / /\\ \\ \\    Shell: Python 3.x · Go 1.22');
     tPrint('   /_/ /  \\_\\_\\   Uptime: 3+ years');
@@ -375,7 +318,6 @@ const processCommand = (raw) => {
   const input = raw.trim();
   if (!input) return;
 
-  // Echo the typed command
   const echo = document.createElement("p");
   echo.className = "t-line t-prompt-line";
   echo.innerHTML = `<span style="color:#7ee787">samyuktha@portfolio:~$</span>&nbsp;${input}`;
@@ -416,7 +358,6 @@ if (termInput) {
       termHistoryIdx = Math.max(termHistoryIdx - 1, -1);
       termInput.value = termHistoryIdx === -1 ? "" : termHistory[termHistoryIdx];
     }
-    // Prevent T from propagating and re-toggling the terminal
     if (e.key === "t") e.stopPropagation();
   });
 }

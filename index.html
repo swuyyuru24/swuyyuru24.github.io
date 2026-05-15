@@ -12,126 +12,141 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Instrument+Sans:wght@400;500;600;700&family=Syne:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Syne:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
 
-    <!-- ── Start Screen ─────────────────────────────────── -->
-    <div id="start-screen" class="start-screen" role="dialog" aria-modal="true" aria-label="Game start screen">
+    <!-- Start Screen -->
+    <!-- Start Screen -->
+    <div id="start-screen" class="start-screen" role="dialog" aria-modal="true" aria-label="Welcome screen">
+      <div class="start-symbols" aria-hidden="true">
+        <span class="sym sym-1">{ }</span>
+        <span class="sym sym-2">&lt; /&gt;</span>
+        <span class="sym sym-3">=&gt;</span>
+        <span class="sym sym-4">$_</span>
+        <span class="sym sym-5">/**</span>
+        <span class="sym sym-6">SELECT *</span>
+        <span class="sym sym-7">async</span>
+        <span class="sym sym-8">def</span>
+        <span class="sym sym-9">func()</span>
+        <span class="sym sym-10">import</span>
+        <span class="sym sym-11">git push</span>
+        <span class="sym sym-12">redis</span>
+        <span class="sym sym-13">docker</span>
+        <span class="sym sym-14">kafka</span>
+        <span class="sym sym-15">lambda</span>
+        <span class="sym sym-16">return</span>
+      </div>
       <div class="start-inner">
-        <p class="start-label">PORTFOLIO RPG · v2025</p>
-        <h1 class="start-name">SAMYUKTHA<br>WUYYURU</h1>
-        <p class="start-class">Software Engineer — Backend &amp; AI · LVL 2</p>
-        <div class="start-bars">
-          <div class="hud-bar-row">
-            <span class="hud-label hp">HP</span>
-            <div class="hud-bar"><div class="hud-fill hp-fill" style="width:100%"></div></div>
-          </div>
-          <div class="hud-bar-row">
-            <span class="hud-label xp">XP</span>
-            <div class="hud-bar"><div class="hud-fill xp-fill" style="width:80%"></div></div>
-          </div>
-        </div>
-        <p class="start-prompt">▶ PRESS ANY KEY TO CONTINUE</p>
+        <p class="start-label">Portfolio · 2025</p>
+        <h1 class="start-name">Samyuktha<br>Wuyyuru</h1>
+        <p class="start-class">Software Engineer — Backend &amp; AI</p>
+        <button class="start-btn" id="start-btn">View my portfolio &rarr;</button>
       </div>
     </div>
 
-    <!-- ── CRT Scanlines ────────────────────────────────── -->
-    <div class="crt-overlay" aria-hidden="true"></div>
-
-    <!-- ── Backdrop ─────────────────────────────────────── -->
+    <!-- Backdrop -->
     <div class="backdrop" aria-hidden="true">
       <div class="aura aura-one"></div>
       <div class="aura aura-two"></div>
     </div>
 
+    <!-- Floating Particles -->
+    <div class="floaters" aria-hidden="true">
+      <div class="floater floater-1"></div>
+      <div class="floater floater-2"></div>
+      <div class="floater floater-3"></div>
+      <div class="floater floater-4"></div>
+      <div class="floater floater-5"></div>
+      <div class="floater floater-6"></div>
+      <div class="floater floater-7"></div>
+      <div class="floater floater-8"></div>
+    </div>
+
+    <!-- Soft Blurred Orbs -->
+    <div class="orbs" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Floating Code Symbols -->
+    <div class="start-symbols" aria-hidden="true">
+      <span class="sym sym-1">{ }</span>
+      <span class="sym sym-2">&lt; /&gt;</span>
+      <span class="sym sym-3">=&gt;</span>
+      <span class="sym sym-4">$_</span>
+      <span class="sym sym-5">/**</span>
+      <span class="sym sym-6">SELECT *</span>
+      <span class="sym sym-7">async</span>
+      <span class="sym sym-8">def</span>
+      <span class="sym sym-9">func()</span>
+      <span class="sym sym-10">import</span>
+      <span class="sym sym-11">git push</span>
+      <span class="sym sym-12">redis</span>
+      <span class="sym sym-13">docker</span>
+      <span class="sym sym-14">kafka</span>
+      <span class="sym sym-15">lambda</span>
+      <span class="sym sym-16">return</span>
+    </div>
+
     <header class="site-header" id="top">
-      <div class="brand-group">
-        <a class="brand" href="#top" aria-label="Home">SW</a>
-        <span class="level-badge">LVL 2</span>
-      </div>
+      <a class="brand" href="#top" aria-label="Home">SW</a>
       <button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="nav-list">
         MENU
       </button>
       <nav>
         <ul id="nav-list" class="nav-list">
-          <li><a href="#about">Bio</a></li>
-          <li><a href="#story">Origin</a></li>
-          <li><a href="#experience">Quests</a></li>
-          <li><a href="#projects">Skills</a></li>
-          <li><a href="#skills">Stats</a></li>
-          <li><a href="#approach">Traits</a></li>
-          <li><a href="#contact">Connect</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#story">Background</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
 
-      <!-- ── Hero / Character Screen ───────────────────── -->
+      <!-- Hero -->
       <section id="about" class="hero section reveal">
-        <div class="hero-hud glass">
-          <div class="hud-top">
-            <div class="hud-name-block">
-              <p class="hud-player-label">PLAYER 1</p>
-              <h1 class="hud-name">Samyuktha Wuyyuru</h1>
-              <p class="hud-class"><span>Software Engineer — Backend &amp; AI</span></p>
-            </div>
-            <div class="hud-level-block">
-              <div class="hud-level-ring">2</div>
-              <p class="hud-level-label">LVL</p>
+        <div class="hero-card glass">
+          <div class="hero-top">
+            <div>
+              <h1 class="hero-name">Samyuktha Wuyyuru</h1>
+              <p class="hero-role"><span>Software Engineer — Backend &amp; AI</span></p>
             </div>
           </div>
 
-          <div class="hud-stats">
-            <div class="hud-bar-row">
-              <span class="hud-label hp">HP</span>
-              <div class="hud-bar"><div class="hud-fill hp-fill" style="width:100%"></div></div>
-              <span class="hud-val">100/100</span>
-            </div>
-            <div class="hud-bar-row">
-              <span class="hud-label mp">MP</span>
-              <div class="hud-bar"><div class="hud-fill mp-fill" style="width:100%"></div></div>
-              <span class="hud-val">100/100</span>
-            </div>
-            <div class="hud-bar-row">
-              <span class="hud-label xp">XP</span>
-              <div class="hud-bar"><div class="hud-fill xp-fill" style="width:80%"></div></div>
-              <span class="hud-val">3200/4000</span>
-            </div>
+          <div class="hero-badges">
+            <span class="hero-badge">United States</span>
+            <span class="hero-badge hero-badge-open">Open to Work</span>
+            <span class="hero-badge">3+ Years Experience</span>
           </div>
 
-          <div class="hud-info">
-            <span class="hud-badge">&#128205; United States</span>
-            <span class="hud-badge hud-badge-open">&#9679; OPEN TO WORK</span>
-            <span class="hud-badge">&#9876; 3+ Years EXP</span>
-          </div>
-
-          <p class="hud-bio">3+ years building scalable backend systems and cloud infrastructure across trucking, healthcare, and telecom.</p>
+          <p class="hero-bio">3+ years building scalable backend systems and cloud infrastructure across trucking, healthcare, and telecom.</p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#experience">&#9654; Quest Log</a>
-            <a class="btn btn-secondary" href="#contact">&#9993; Send Message</a>
+            <a class="btn btn-primary" href="#experience">View Experience</a>
+            <a class="btn btn-secondary" href="#contact">Send Message</a>
           </div>
-          <p class="terminal-hint-hud">press <kbd>T</kbd> to open terminal</p>
+          <p class="terminal-hint-hero">press <kbd>T</kbd> to open terminal</p>
         </div>
       </section>
 
-      <!-- ── Origin Story ──────────────────────────────── -->
+      <!-- Background -->
       <section id="story" class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">Origin Story</p>
+          <p class="eyebrow">Background</p>
           <h2>How I got here.</h2>
         </div>
-        <div class="dialogue-box glass">
-          <div class="dialogue-portrait">
-            <div class="portrait-frame">SW</div>
-            <p class="portrait-name">Samyuktha</p>
-          </div>
-          <div class="dialogue-text">
+        <div class="story-card glass">
+          <div class="story-text">
             <p>
               I'm a backend focused software engineer working on automation and integration heavy systems.
               I started my career building telecom purchase workflows at Infosys, where I learned how
@@ -153,20 +168,20 @@
         </div>
       </section>
 
-      <!-- ── Quest Log / Experience ────────────────────── -->
+      <!-- Experience -->
       <section id="experience" class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">Quest Log</p>
-          <h2>Completed missions.</h2>
-          <p>Select a quest to expand details.</p>
+          <p class="eyebrow">Experience</p>
+          <h2>Work history.</h2>
+          <p>Select a role to expand details.</p>
         </div>
-        <div class="quest-list">
-          <article class="quest-card glass">
+        <div class="exp-list">
+          <article class="exp-card glass">
             <button class="exp-toggle" aria-expanded="false" aria-controls="work-qued">
-              <div class="quest-header">
-                <span class="quest-status active">&#9654; IN PROGRESS</span>
-                <span class="quest-icon" aria-hidden="true">🚛</span>
-                <span class="quest-title">Software Engineer | Qued Inc.</span>
+              <div class="exp-header">
+                <span class="exp-status active">Current</span>
+                <span class="exp-icon" aria-hidden="true">&#128666;</span>
+                <span class="exp-title">Software Engineer | Qued Inc.</span>
                 <span class="exp-chevron" aria-hidden="true">&#9662;</span>
               </div>
               <span class="meta">Aug 2024 – Present · Virginia, USA</span>
@@ -180,12 +195,12 @@
             </ul>
           </article>
 
-          <article class="quest-card glass">
+          <article class="exp-card glass">
             <button class="exp-toggle" aria-expanded="false" aria-controls="work-astek">
-              <div class="quest-header">
-                <span class="quest-status done">&#10003; COMPLETED</span>
-                <span class="quest-icon" aria-hidden="true">🧬</span>
-                <span class="quest-title">Software Developer Intern &amp; Co-op | Astek Diagnostics</span>
+              <div class="exp-header">
+                <span class="exp-status done">Completed</span>
+                <span class="exp-icon" aria-hidden="true">&#129516;</span>
+                <span class="exp-title">Software Developer Intern &amp; Co-op | Astek Diagnostics</span>
                 <span class="exp-chevron" aria-hidden="true">&#9662;</span>
               </div>
               <span class="meta">Jun 2023 – Dec 2023 · Baltimore, MD</span>
@@ -201,12 +216,12 @@
             </ul>
           </article>
 
-          <article class="quest-card glass">
+          <article class="exp-card glass">
             <button class="exp-toggle" aria-expanded="false" aria-controls="work-infosys">
-              <div class="quest-header">
-                <span class="quest-status done">&#10003; COMPLETED</span>
-                <span class="quest-icon" aria-hidden="true">📡</span>
-                <span class="quest-title">Associate Software Engineer | Infosys Ltd.</span>
+              <div class="exp-header">
+                <span class="exp-status done">Completed</span>
+                <span class="exp-icon" aria-hidden="true">&#128225;</span>
+                <span class="exp-title">Associate Software Engineer | Infosys Ltd.</span>
                 <span class="exp-chevron" aria-hidden="true">&#9662;</span>
               </div>
               <span class="meta">Dec 2020 – Oct 2021 · Hyderabad, India</span>
@@ -224,15 +239,17 @@
         </div>
       </section>
 
-      <!-- ── Inventory / Projects ──────────────────────── -->
+      <!-- Projects -->
       <section id="projects" class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">Inventory · Rare Artifacts</p>
-          <h2>Items forged in battle.</h2>
+          <p class="eyebrow">Projects</p>
+          <h2>What I've built.</h2>
         </div>
         <div class="projects-grid">
           <article class="project-card glass">
-            <div class="item-rarity legendary">&#9670; LEGENDARY</div>
+            <div class="project-preview">
+              <img src="assets/preview-centsible.svg" alt="Centsible app dashboard" />
+            </div>
             <h3>Centsible — Personal Finance Tracker</h3>
             <p>Full-stack finance app with Plaid bank sync, AI-powered transaction categorization, budget goals, net worth tracking, and Splitwise integration.</p>
             <ul class="tag-list">
@@ -243,12 +260,14 @@
               <li><span class="tag">TypeScript</span></li>
             </ul>
             <div class="project-links">
-              <a class="btn btn-primary btn-sm" href="https://centsible-app-rust.vercel.app" target="_blank" rel="noreferrer">&#9654; Live Demo</a>
-              <a class="btn btn-secondary btn-sm" href="https://github.com/swuyyuru24/Centsible" target="_blank" rel="noreferrer">&#9000; Source</a>
+              <a class="btn btn-primary btn-sm" href="https://centsible-app-rust.vercel.app" target="_blank" rel="noreferrer">Live Demo</a>
+              <a class="btn btn-secondary btn-sm" href="https://github.com/swuyyuru24/Centsible" target="_blank" rel="noreferrer">Source</a>
             </div>
           </article>
           <article class="project-card glass">
-            <div class="item-rarity rare">&#9670; RARE</div>
+            <div class="project-preview">
+              <img src="assets/preview-expense.svg" alt="Expense workflow dashboard" />
+            </div>
             <h3>Expense Workflow Automation Platform</h3>
             <p>Policy-driven expense validation and automatic approval routing derived from organizational hierarchy, with audit-ready state tracking.</p>
             <ul class="tag-list">
@@ -259,7 +278,9 @@
             </ul>
           </article>
           <article class="project-card glass">
-            <div class="item-rarity epic">&#9670; EPIC</div>
+            <div class="project-preview">
+              <img src="assets/preview-chat.svg" alt="Chat emotion analysis interface" />
+            </div>
             <h3>Real-Time Chat Emotion Intelligence</h3>
             <p>Distributed chat emotion prediction system with transformer-based NLP inference, event-driven processing, and OIDC/JWT authentication.</p>
             <ul class="tag-list">
@@ -273,15 +294,15 @@
         </div>
       </section>
 
-      <!-- ── Character Stats / Skills ─────────────────── -->
+      <!-- Skills -->
       <section id="skills" class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">Character Stats</p>
-          <h2>Abilities &amp; Tech Tree</h2>
+          <p class="eyebrow">Skills</p>
+          <h2>What I work with.</h2>
         </div>
         <div class="skills-layout">
           <article class="skill-group glass">
-            <h3>&#9876; Languages</h3>
+            <h3>Languages</h3>
             <ul class="skill-bars-list">
               <li><span class="sbl-name">Python</span><div class="sbl-track"><div class="sbl-fill" data-pct="95"></div></div></li>
               <li><span class="sbl-name">Go</span><div class="sbl-track"><div class="sbl-fill" data-pct="80"></div></div></li>
@@ -293,7 +314,7 @@
           </article>
 
           <article class="skill-group glass">
-            <h3>&#128737; System Design</h3>
+            <h3>System Design</h3>
             <ul class="tag-list">
               <li><span class="tag">Idempotency</span></li>
               <li><span class="tag">Retry / Backoff</span></li>
@@ -305,7 +326,7 @@
           </article>
 
           <article class="skill-group glass">
-            <h3>&#9729; Cloud &amp; DevOps</h3>
+            <h3>Cloud &amp; DevOps</h3>
             <ul class="tag-list">
               <li><span class="tag">AWS Lambda</span></li>
               <li><span class="tag">S3</span></li>
@@ -320,7 +341,7 @@
           </article>
 
           <article class="skill-group glass">
-            <h3>&#128451; Datastores &amp; Messaging</h3>
+            <h3>Datastores &amp; Messaging</h3>
             <ul class="tag-list">
               <li><span class="tag">PostgreSQL</span></li>
               <li><span class="tag">MySQL</span></li>
@@ -333,7 +354,7 @@
           </article>
 
           <article class="skill-group glass">
-            <h3>&#128295; Tooling</h3>
+            <h3>Tooling</h3>
             <ul class="tag-list">
               <li><span class="tag">Git</span></li>
               <li><span class="tag">GitHub</span></li>
@@ -344,7 +365,7 @@
           </article>
 
           <article class="skill-group glass">
-            <h3>&#129302; LLMs &amp; AI</h3>
+            <h3>LLMs &amp; AI</h3>
             <ul class="tag-list">
               <li><span class="tag">Transformer Models</span></li>
               <li><span class="tag">NLP Pipelines</span></li>
@@ -357,10 +378,10 @@
         </div>
       </section>
 
-      <!-- ── Passive Skills / Approach ─────────────────── -->
+      <!-- Approach -->
       <section id="approach" class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">Soft Stats</p>
+          <p class="eyebrow">Working Style</p>
           <h2>What it's like to work with me.</h2>
         </div>
         <div class="approach-grid">
@@ -391,26 +412,26 @@
         </div>
       </section>
 
-      <!-- ── Offline Activities ────────────────────────── -->
+      <!-- Beyond Work -->
       <section id="beyond-work" class="section reveal">
         <div class="section-head">
-          <p class="eyebrow">Offline Activities</p>
-          <h2>Side quests.</h2>
+          <p class="eyebrow">Beyond Work</p>
+          <h2>Outside the editor.</h2>
         </div>
         <article class="lifestyle-card glass">
           <div class="lifestyle-grid">
             <div class="lifestyle-item">
-              <span class="lifestyle-icon">🏋️‍♀️</span>
+              <span class="lifestyle-icon">&#127947;&#65039;&#8205;&#9792;&#65039;</span>
               <p class="lifestyle-label">Active</p>
-              <p class="lifestyle-desc">Daily quests: run, lift, repeat.</p>
+              <p class="lifestyle-desc">Running, lifting, staying active.</p>
             </div>
             <div class="lifestyle-item">
-              <span class="lifestyle-icon">🗺️</span>
+              <span class="lifestyle-icon">&#128506;&#65039;</span>
               <p class="lifestyle-label">Explorer</p>
               <p class="lifestyle-desc">Traveling and hiking whenever possible.</p>
             </div>
             <div class="lifestyle-item">
-              <span class="lifestyle-icon">🍳</span>
+              <span class="lifestyle-icon">&#127859;</span>
               <p class="lifestyle-label">Creator</p>
               <p class="lifestyle-desc">Cooking, dancing, and the occasional creative rabbit hole.</p>
             </div>
@@ -418,17 +439,17 @@
         </article>
       </section>
 
-      <!-- ── Contact / Guild Recruitment ──────────────── -->
+      <!-- Contact -->
       <section id="contact" class="section reveal">
         <div class="contact-card glass">
-          <p class="eyebrow">Guild Recruitment</p>
+          <p class="eyebrow">Get in Touch</p>
           <h2>Open to Opportunities.</h2>
           <p class="contact-note">Open to software engineering opportunities and collaborations.</p>
           <a class="contact-email" href="mailto:swuyyuru12@gmail.com">swuyyuru12@gmail.com</a>
           <div class="contact-actions">
             <a class="btn btn-primary" href="mailto:swuyyuru12@gmail.com">&#9993; Send Message</a>
-            <a class="btn btn-secondary" href="https://github.com/swuyyuru24" target="_blank" rel="noreferrer">&#9000; GitHub</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/samyuktha-wuyyuru/" target="_blank" rel="noreferrer">&#128279; LinkedIn</a>
+            <a class="btn btn-secondary" href="https://github.com/swuyyuru24" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/samyuktha-wuyyuru/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
       </section>
@@ -436,10 +457,10 @@
     </main>
 
     <footer class="site-footer">
-      <p>&#169; <span id="year"></span> Samyuktha Wuyyuru &nbsp;&#183;&nbsp; crafted with code + caffeine &nbsp;&#183;&nbsp; <span class="footer-hint">press <kbd>`</kbd> for terminal</span></p>
+      <p>&#169; <span id="year"></span> Samyuktha Wuyyuru &nbsp;&#183;&nbsp; crafted with code + caffeine &nbsp;&#183;&nbsp; <span class="footer-hint">press <kbd>T</kbd> for terminal</span></p>
     </footer>
 
-<!-- ── Terminal ───────────────────────────────────── -->
+    <!-- Terminal -->
     <div id="terminal" class="terminal" hidden aria-label="Portfolio terminal" role="complementary">
       <div class="terminal-titlebar">
         <div class="terminal-dots">
@@ -459,15 +480,6 @@
           <input id="terminal-input" class="terminal-input" type="text"
                  autocomplete="off" spellcheck="false" aria-label="Terminal input" />
         </div>
-      </div>
-    </div>
-
-    <!-- ── Achievement Popup ──────────────────────────── -->
-    <div id="achievement" class="achievement" aria-live="polite" aria-atomic="true" hidden>
-      <span class="achievement-icon">&#127942;</span>
-      <div>
-        <p class="achievement-title">ACHIEVEMENT UNLOCKED</p>
-        <p class="achievement-desc" id="achievement-desc"></p>
       </div>
     </div>
 
