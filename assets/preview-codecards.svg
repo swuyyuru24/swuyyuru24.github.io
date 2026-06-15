@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="system-ui,-apple-system,sans-serif">
+  <!-- Light app background -->
+  <rect width="600" height="340" fill="#ffffff" rx="12"/>
+  <rect x="0.5" y="0.5" width="599" height="339" rx="12" fill="none" stroke="#e5e5e5"/>
+
+  <!-- Header -->
+  <text x="24" y="38" font-size="18" font-weight="700" fill="#000000">My Decks</text>
+  <rect x="498" y="22" width="78" height="24" rx="8" fill="#1f6feb"/>
+  <text x="537" y="38" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">＋ Snap</text>
+
+  <!-- ===== Card 1 (DSA) ===== -->
+  <rect x="24" y="56" width="268" height="126" rx="12" fill="#ffffff" stroke="#e5e5e5"/>
+  <text x="40" y="80" font-size="11" font-weight="600" fill="#1f6feb">DSA</text>
+  <text x="276" y="80" text-anchor="end" font-size="11" font-weight="600" fill="#666666">Medium</text>
+  <text x="40" y="104" font-size="13" font-weight="600" fill="#000000">Longest Substring</text>
+  <text x="40" y="120" font-size="13" font-weight="600" fill="#000000">Without Repeating</text>
+  <rect x="40" y="130" width="94" height="20" rx="6" fill="#eef2ff"/>
+  <text x="87" y="144" text-anchor="middle" font-size="10" fill="#1f6feb">Sliding Window</text>
+  <rect x="142" y="130" width="64" height="20" rx="6" fill="#eef2ff"/>
+  <text x="174" y="144" text-anchor="middle" font-size="10" fill="#1f6feb">Hash Map</text>
+  <text x="40" y="170" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#666666">Confidence: ███░░ 3/5</text>
+
+  <!-- ===== Card 2 (SQL) ===== -->
+  <rect x="308" y="56" width="268" height="126" rx="12" fill="#ffffff" stroke="#e5e5e5"/>
+  <text x="324" y="80" font-size="11" font-weight="600" fill="#1f6feb">SQL</text>
+  <text x="560" y="80" text-anchor="end" font-size="11" font-weight="600" fill="#666666">Easy</text>
+  <text x="324" y="104" font-size="13" font-weight="600" fill="#000000">Top Earners by</text>
+  <text x="324" y="120" font-size="13" font-weight="600" fill="#000000">Department</text>
+  <rect x="324" y="130" width="106" height="20" rx="6" fill="#eef2ff"/>
+  <text x="377" y="144" text-anchor="middle" font-size="10" fill="#1f6feb">Window Functions</text>
+  <text x="324" y="170" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#666666">Confidence: ████░ 4/5</text>
+
+  <!-- ===== Card 3 (System Design) ===== -->
+  <rect x="24" y="192" width="268" height="126" rx="12" fill="#ffffff" stroke="#e5e5e5"/>
+  <text x="40" y="216" font-size="11" font-weight="600" fill="#1f6feb">System Design</text>
+  <text x="276" y="216" text-anchor="end" font-size="11" font-weight="600" fill="#666666">Hard</text>
+  <text x="40" y="240" font-size="13" font-weight="600" fill="#000000">Design a URL</text>
+  <text x="40" y="256" font-size="13" font-weight="600" fill="#000000">Shortener</text>
+  <rect x="40" y="266" width="62" height="20" rx="6" fill="#eef2ff"/>
+  <text x="71" y="280" text-anchor="middle" font-size="10" fill="#1f6feb">Caching</text>
+  <rect x="110" y="266" width="98" height="20" rx="6" fill="#eef2ff"/>
+  <text x="159" y="280" text-anchor="middle" font-size="10" fill="#1f6feb">DB Selection</text>
+  <text x="40" y="306" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#666666">Confidence: ██░░░ 2/5</text>
+
+  <!-- ===== Card 4 (DSA) ===== -->
+  <rect x="308" y="192" width="268" height="126" rx="12" fill="#ffffff" stroke="#e5e5e5"/>
+  <text x="324" y="216" font-size="11" font-weight="600" fill="#1f6feb">DSA</text>
+  <text x="560" y="216" text-anchor="end" font-size="11" font-weight="600" fill="#666666">Medium</text>
+  <text x="324" y="240" font-size="13" font-weight="600" fill="#000000">Merge Intervals</text>
+  <rect x="324" y="252" width="56" height="20" rx="6" fill="#eef2ff"/>
+  <text x="352" y="266" text-anchor="middle" font-size="10" fill="#1f6feb">Sorting</text>
+  <rect x="388" y="252" width="56" height="20" rx="6" fill="#eef2ff"/>
+  <text x="416" y="266" text-anchor="middle" font-size="10" fill="#1f6feb">Greedy</text>
+  <text x="324" y="306" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#666666">Confidence: █████ 5/5</text>
+</svg>

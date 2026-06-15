@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="system-ui,-apple-system,sans-serif">
+  <defs>
+    <linearGradient id="qgban" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#16a34a"/><stop offset="100%" stop-color="#22c55e"/></linearGradient>
+  </defs>
+  <!-- Light app background -->
+  <rect width="600" height="340" fill="#f7faf7" rx="12"/>
+  <rect x="0.5" y="0.5" width="599" height="339" rx="12" fill="none" stroke="#e5eae5"/>
+
+  <!-- Header -->
+  <text x="24" y="38" font-size="18" font-weight="800" fill="#14532d">QuickGroceries</text>
+  <rect x="450" y="22" width="126" height="24" rx="12" fill="#dcfce7"/>
+  <text x="513" y="38" text-anchor="middle" font-size="10" font-weight="600" fill="#16a34a">🛵 15-min delivery</text>
+
+  <!-- Search bar -->
+  <rect x="24" y="54" width="552" height="30" rx="10" fill="#ffffff" stroke="#e5eae5"/>
+  <text x="40" y="74" font-size="11" fill="#94a3a0">🔍 Search for milk, eggs, bread…</text>
+
+  <!-- Category chips -->
+  <rect x="24" y="96" width="74" height="24" rx="12" fill="#16a34a"/>
+  <text x="61" y="112" text-anchor="middle" font-size="10" font-weight="600" fill="#ffffff">🍎 Fruits</text>
+  <rect x="106" y="96" width="78" height="24" rx="12" fill="#ffffff" stroke="#e5eae5"/>
+  <text x="145" y="112" text-anchor="middle" font-size="10" fill="#475569">🥦 Veggies</text>
+  <rect x="192" y="96" width="70" height="24" rx="12" fill="#ffffff" stroke="#e5eae5"/>
+  <text x="227" y="112" text-anchor="middle" font-size="10" fill="#475569">🥛 Dairy</text>
+  <rect x="270" y="96" width="74" height="24" rx="12" fill="#ffffff" stroke="#e5eae5"/>
+  <text x="307" y="112" text-anchor="middle" font-size="10" fill="#475569">🍪 Snacks</text>
+  <rect x="352" y="96" width="76" height="24" rx="12" fill="#ffffff" stroke="#e5eae5"/>
+  <text x="390" y="112" text-anchor="middle" font-size="10" fill="#475569">🥤 Drinks</text>
+
+  <!-- ===== Product grid (4) ===== -->
+  <!-- product card template: 128 wide -->
+  <g>
+    <rect x="24" y="134" width="128" height="146" rx="14" fill="#ffffff" stroke="#e5eae5"/>
+    <rect x="38" y="148" width="100" height="72" rx="10" fill="#fef3c7"/>
+    <text x="88" y="192" text-anchor="middle" font-size="30">🍌</text>
+    <text x="38" y="238" font-size="11" font-weight="600" fill="#0f172a">Bananas</text>
+    <text x="38" y="252" font-size="9" fill="#94a3a0">1 dozen</text>
+    <text x="38" y="272" font-size="12" font-weight="700" fill="#14532d">$1.99</text>
+    <rect x="116" y="258" width="22" height="22" rx="7" fill="#16a34a"/>
+    <text x="127" y="274" text-anchor="middle" font-size="14" fill="#ffffff">＋</text>
+  </g>
+  <g>
+    <rect x="166" y="134" width="128" height="146" rx="14" fill="#ffffff" stroke="#e5eae5"/>
+    <rect x="180" y="148" width="100" height="72" rx="10" fill="#fee2e2"/>
+    <text x="230" y="192" text-anchor="middle" font-size="30">🍓</text>
+    <text x="180" y="238" font-size="11" font-weight="600" fill="#0f172a">Strawberries</text>
+    <text x="180" y="252" font-size="9" fill="#94a3a0">250 g pack</text>
+    <text x="180" y="272" font-size="12" font-weight="700" fill="#14532d">$3.49</text>
+    <rect x="258" y="258" width="22" height="22" rx="7" fill="#16a34a"/>
+    <text x="269" y="274" text-anchor="middle" font-size="14" fill="#ffffff">＋</text>
+  </g>
+  <g>
+    <rect x="308" y="134" width="128" height="146" rx="14" fill="#ffffff" stroke="#e5eae5"/>
+    <rect x="322" y="148" width="100" height="72" rx="10" fill="#eff6ff"/>
+    <text x="372" y="192" text-anchor="middle" font-size="30">🥛</text>
+    <text x="322" y="238" font-size="11" font-weight="600" fill="#0f172a">Whole Milk</text>
+    <text x="322" y="252" font-size="9" fill="#94a3a0">1 gallon</text>
+    <text x="322" y="272" font-size="12" font-weight="700" fill="#14532d">$2.79</text>
+    <rect x="400" y="258" width="22" height="22" rx="7" fill="#16a34a"/>
+    <text x="411" y="274" text-anchor="middle" font-size="14" fill="#ffffff">＋</text>
+  </g>
+  <g>
+    <rect x="450" y="134" width="126" height="146" rx="14" fill="#ffffff" stroke="#e5eae5"/>
+    <rect x="464" y="148" width="98" height="72" rx="10" fill="#fef9c3"/>
+    <text x="513" y="192" text-anchor="middle" font-size="30">🍞</text>
+    <text x="464" y="238" font-size="11" font-weight="600" fill="#0f172a">Sourdough</text>
+    <text x="464" y="252" font-size="9" fill="#94a3a0">1 loaf</text>
+    <text x="464" y="272" font-size="12" font-weight="700" fill="#14532d">$4.25</text>
+    <rect x="540" y="258" width="22" height="22" rx="7" fill="#16a34a"/>
+    <text x="551" y="274" text-anchor="middle" font-size="14" fill="#ffffff">＋</text>
+  </g>
+
+  <!-- Cart bar -->
+  <rect x="24" y="294" width="552" height="30" rx="10" fill="#16a34a"/>
+  <text x="40" y="314" font-size="11" font-weight="600" fill="#ffffff">🛒 3 items</text>
+  <text x="560" y="314" text-anchor="end" font-size="11" font-weight="700" fill="#ffffff">Checkout · $8.27 →</text>
+</svg>

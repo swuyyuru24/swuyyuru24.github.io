@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="system-ui,-apple-system,'Segoe UI',Roboto,sans-serif">
+  <defs>
+    <radialGradient id="mfbg" cx="30%" cy="0%" r="100%">
+      <stop offset="0%" stop-color="#1b2030"/>
+      <stop offset="100%" stop-color="#0d0f17"/>
+    </radialGradient>
+    <linearGradient id="mp1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3b3f5c"/><stop offset="100%" stop-color="#161a27"/></linearGradient>
+    <linearGradient id="mp2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5c3b4a"/><stop offset="100%" stop-color="#161a27"/></linearGradient>
+    <linearGradient id="mp3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3b5c52"/><stop offset="100%" stop-color="#161a27"/></linearGradient>
+    <linearGradient id="mp4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#4a3b5c"/><stop offset="100%" stop-color="#161a27"/></linearGradient>
+    <linearGradient id="mp5" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#5c533b"/><stop offset="100%" stop-color="#161a27"/></linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#mfbg)" rx="12"/>
+
+  <!-- Brand -->
+  <text x="24" y="40" font-size="20" font-weight="800">🎬 <tspan fill="#f4f6fb">Movie</tspan><tspan fill="#e50914">Flix</tspan></text>
+  <text x="24" y="60" font-size="10" fill="#9aa3b5">Rate a few films you know — get picks tuned to your taste.</text>
+  <!-- Search -->
+  <rect x="430" y="26" width="146" height="26" rx="10" fill="#161a27" stroke="#262c3e"/>
+  <text x="444" y="43" font-size="10" fill="#9aa3b5">🔍 Search movies…</text>
+
+  <!-- Step label -->
+  <text x="24" y="90" font-size="11" font-weight="700" fill="#f4f6fb">① Rate movies you've seen</text>
+
+  <!-- ===== Poster grid ===== -->
+  <!-- helper: each poster 100w; cover 100h -->
+  <g>
+    <rect x="24" y="100" width="100" height="100" rx="14" fill="url(#mp1)"/>
+    <text x="74" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#f4f6fb">The Matrix</text>
+    <text x="74" y="214" text-anchor="middle" font-size="9" fill="#9aa3b5">1999 · ⭐ 4.7</text>
+    <text x="74" y="230" text-anchor="middle" font-size="11" fill="#f5c518">★★★★☆</text>
+  </g>
+  <g>
+    <rect x="136" y="100" width="100" height="100" rx="14" fill="url(#mp2)"/>
+    <text x="186" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#f4f6fb">Inception</text>
+    <text x="186" y="214" text-anchor="middle" font-size="9" fill="#9aa3b5">2010 · ⭐ 4.6</text>
+    <text x="186" y="230" text-anchor="middle" font-size="11" fill="#f5c518">★★★★★</text>
+  </g>
+  <g>
+    <rect x="248" y="100" width="100" height="100" rx="14" fill="url(#mp3)"/>
+    <text x="298" y="150" text-anchor="middle" font-size="11" font-weight="700" fill="#f4f6fb">Inter-</text>
+    <text x="298" y="164" text-anchor="middle" font-size="11" font-weight="700" fill="#f4f6fb">stellar</text>
+    <text x="298" y="214" text-anchor="middle" font-size="9" fill="#9aa3b5">2014 · ⭐ 4.5</text>
+    <text x="298" y="230" text-anchor="middle" font-size="11" fill="#f5c518">★★★★☆</text>
+  </g>
+  <g>
+    <rect x="360" y="100" width="100" height="100" rx="14" fill="url(#mp4)"/>
+    <text x="410" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#f4f6fb">Parasite</text>
+    <text x="410" y="214" text-anchor="middle" font-size="9" fill="#9aa3b5">2019 · ⭐ 4.6</text>
+    <text x="410" y="230" text-anchor="middle" font-size="11" fill="#9aa3b5">☆☆☆☆☆</text>
+  </g>
+  <g>
+    <rect x="472" y="100" width="100" height="100" rx="14" fill="url(#mp5)"/>
+    <text x="522" y="155" text-anchor="middle" font-size="11" font-weight="700" fill="#f4f6fb">Dune</text>
+    <text x="522" y="214" text-anchor="middle" font-size="9" fill="#9aa3b5">2021 · ⭐ 4.4</text>
+    <text x="522" y="230" text-anchor="middle" font-size="11" fill="#f5c518">★★★★☆</text>
+  </g>
+
+  <!-- ===== Tune + CTA ===== -->
+  <text x="24" y="262" font-size="11" font-weight="700" fill="#f4f6fb">② Tune your recommendations</text>
+  <text x="24" y="284" font-size="8.5" fill="#9aa3b5">Similar movies (content)</text>
+  <line x1="150" y1="281" x2="300" y2="281" stroke="#262c3e" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="232" cy="281" r="7" fill="#e50914"/>
+  <text x="306" y="284" font-size="8.5" fill="#9aa3b5">Similar users (collaborative)</text>
+  <!-- CTA -->
+  <rect x="378" y="296" width="198" height="30" rx="10" fill="#e50914"/>
+  <text x="477" y="316" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Get my recommendations →</text>
+  <text x="24" y="316" font-size="8" fill="#9aa3b5">Hybrid engine · content-based + collaborative (SVD)</text>
+</svg>

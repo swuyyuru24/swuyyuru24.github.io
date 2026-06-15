@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace">
+  <!-- Terminal window -->
+  <rect width="600" height="340" fill="#0b0e14" rx="12"/>
+  <!-- Title bar -->
+  <rect x="0" y="0" width="600" height="34" rx="12" fill="#161b26"/>
+  <rect x="0" y="22" width="600" height="12" fill="#161b26"/>
+  <circle cx="22" cy="17" r="5" fill="#ff5f57"/>
+  <circle cx="40" cy="17" r="5" fill="#febc2e"/>
+  <circle cx="58" cy="17" r="5" fill="#28c840"/>
+  <text x="300" y="21" text-anchor="middle" font-size="11" fill="#7d8590">aitrader — ML trading assistant</text>
+
+  <!-- Body -->
+  <!-- backtest -->
+  <text x="20" y="62" font-size="12"><tspan fill="#4ade80">$</tspan> <tspan fill="#e6edf3">aitrader backtest SPY --years 2</tspan></text>
+  <text x="20" y="82" font-size="11" fill="#7d8590">Training model on 504 daily bars…</text>
+  <text x="20" y="100" font-size="11" fill="#7d8590">Validation metrics (chronological holdout):</text>
+  <text x="36" y="120" font-size="11.5"><tspan fill="#7d8590">Return </tspan><tspan fill="#4ade80">+18.4%</tspan><tspan fill="#7d8590">   Sharpe </tspan><tspan fill="#e6edf3">1.42</tspan><tspan fill="#7d8590">   Max DD </tspan><tspan fill="#f87171">-7.1%</tspan><tspan fill="#7d8590">   Win </tspan><tspan fill="#e6edf3">56%</tspan></text>
+  <text x="36" y="138" font-size="11" fill="#7d8590">vs buy &amp; hold: +12.9%</text>
+
+  <!-- trade loop -->
+  <text x="20" y="168" font-size="12"><tspan fill="#4ade80">$</tspan> <tspan fill="#e6edf3">aitrader trade --paper</tspan></text>
+  <text x="20" y="188" font-size="11" fill="#facc15">!! PAPER TRADING — no real money !!</text>
+  <text x="20" y="208" font-size="11" fill="#7d8590">[2026-06-14 22:31:45] pass #1</text>
+  <text x="36" y="228" font-size="11.5"><tspan fill="#e6edf3">SPY        </tspan><tspan fill="#7d8590">P(up)=</tspan><tspan fill="#e6edf3">0.623</tspan><tspan fill="#7d8590">  -> </tspan><tspan fill="#4ade80">buy</tspan><tspan fill="#7d8590"> (position_sized)</tspan></text>
+  <text x="36" y="248" font-size="11.5"><tspan fill="#e6edf3">AAPL       </tspan><tspan fill="#7d8590">P(up)=</tspan><tspan fill="#e6edf3">0.441</tspan><tspan fill="#7d8590">  -> </tspan><tspan fill="#7d8590">hold (no_signal)</tspan></text>
+  <text x="36" y="268" font-size="11.5"><tspan fill="#e6edf3">BTC/USD    </tspan><tspan fill="#7d8590">P(up)=</tspan><tspan fill="#e6edf3">0.689</tspan><tspan fill="#7d8590">  -> </tspan><tspan fill="#4ade80">buy</tspan><tspan fill="#7d8590"> (entry)</tspan></text>
+  <text x="36" y="288" font-size="11.5"><tspan fill="#e6edf3">ETH/USD    </tspan><tspan fill="#7d8590">P(up)=</tspan><tspan fill="#e6edf3">nan</tspan><tspan fill="#7d8590">    -> </tspan><tspan fill="#f87171">skip (no_data)</tspan></text>
+  <text x="20" y="312" font-size="12"><tspan fill="#4ade80">$</tspan> <tspan fill="#e6edf3">_</tspan></text>
+</svg>
