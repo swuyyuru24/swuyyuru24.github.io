@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="'Manrope',system-ui,sans-serif">
+  <defs>
+    <linearGradient id="jbg" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#FAF6EE"/>
+      <stop offset="100%" stop-color="#F1EBDB"/>
+    </linearGradient>
+  </defs>
+  <!-- Cream app background -->
+  <rect width="600" height="340" fill="url(#jbg)" rx="12"/>
+
+  <!-- Greeting header -->
+  <text x="28" y="48" font-family="'Fraunces',Georgia,serif" font-weight="600" font-size="24" fill="#2D2A26">Good morning, <tspan fill="#D08568">sam</tspan></text>
+  <text x="28" y="70" font-size="13" fill="#6B655C">Sunday, June 14</text>
+
+  <!-- ===== Left column: Today's reviews ===== -->
+  <text x="28" y="104" font-size="11" font-weight="700" letter-spacing="1.2" fill="#6B655C">TODAY'S REVIEWS</text>
+
+  <!-- Review card 1 — complete -->
+  <rect x="28" y="116" width="262" height="62" rx="20" fill="#ffffff" stroke="#D8E3DC" stroke-width="1"/>
+  <circle cx="60" cy="147" r="22" fill="#E8B14E"/>
+  <text x="60" y="155" text-anchor="middle" font-size="20">✨</text>
+  <text x="94" y="142" font-size="14" font-weight="600" fill="#2D2A26">Morning Review</text>
+  <text x="94" y="160" font-size="11" fill="#6B655C">Complete — well done 🎉</text>
+  <text x="276" y="152" text-anchor="end" font-size="16" fill="#3F574A">›</text>
+
+  <!-- Review card 2 — in progress -->
+  <rect x="28" y="186" width="262" height="62" rx="20" fill="#ffffff" stroke="#D8E3DC" stroke-width="1"/>
+  <circle cx="60" cy="217" r="22" fill="#F3D8C7"/>
+  <text x="60" y="225" text-anchor="middle" font-size="20">✍️</text>
+  <text x="94" y="212" font-size="14" font-weight="600" fill="#2D2A26">Evening Reflection</text>
+  <text x="94" y="230" font-size="11" fill="#6B655C">In progress</text>
+  <text x="276" y="222" text-anchor="end" font-size="16" fill="#3F574A">›</text>
+
+  <!-- Review card 3 — not started -->
+  <rect x="28" y="256" width="262" height="62" rx="20" fill="#ffffff" stroke="#D8E3DC" stroke-width="1"/>
+  <circle cx="60" cy="287" r="22" fill="#D8E3DC"/>
+  <text x="60" y="295" text-anchor="middle" font-size="20">🌱</text>
+  <text x="94" y="282" font-size="14" font-weight="600" fill="#2D2A26">Gratitude</text>
+  <text x="94" y="300" font-size="11" fill="#6B655C">Not started — tap to begin</text>
+  <text x="276" y="292" text-anchor="end" font-size="16" fill="#3F574A">›</text>
+
+  <!-- ===== Right column: Habits growing ===== -->
+  <text x="310" y="104" font-size="11" font-weight="700" letter-spacing="1.2" fill="#6B655C">HABITS GROWING</text>
+
+  <!-- Habit 1 — done -->
+  <rect x="310" y="116" width="262" height="54" rx="20" fill="#ffffff" stroke="#D8E3DC" stroke-width="1"/>
+  <circle cx="340" cy="143" r="20" fill="#3F574A"/>
+  <text x="340" y="150" text-anchor="middle" font-size="20" fill="#ffffff">✓</text>
+  <text x="372" y="139" font-size="14" font-weight="600" fill="#6B655C" text-decoration="line-through">Meditate 10 min</text>
+  <text x="372" y="156" font-size="11" fill="#6B655C">21 day streak 🌳</text>
+
+  <!-- Habit 2 — flowering streak -->
+  <rect x="310" y="178" width="262" height="54" rx="20" fill="#ffffff" stroke="#D8E3DC" stroke-width="1"/>
+  <circle cx="340" cy="205" r="20" fill="#D8E3DC"/>
+  <text x="340" y="212" text-anchor="middle" font-size="18">🌸</text>
+  <text x="372" y="201" font-size="14" font-weight="600" fill="#2D2A26">Read before bed</text>
+  <text x="372" y="218" font-size="11" fill="#6B655C">34 day streak 🌸</text>
+
+  <!-- Habit 3 — new seed -->
+  <rect x="310" y="240" width="262" height="54" rx="20" fill="#ffffff" stroke="#D8E3DC" stroke-width="1"/>
+  <circle cx="340" cy="267" r="20" fill="#D8E3DC"/>
+  <text x="340" y="274" text-anchor="middle" font-size="18">🌱</text>
+  <text x="372" y="263" font-size="14" font-weight="600" fill="#2D2A26">Drink water</text>
+  <text x="372" y="280" font-size="11" fill="#6B655C">New seed — let it sprout 🌱</text>
+
+  <!-- Floating action button -->
+  <circle cx="540" cy="300" r="22" fill="#D08568"/>
+  <text x="540" y="308" text-anchor="middle" font-size="24" fill="#ffffff" font-weight="300">+</text>
+</svg>
