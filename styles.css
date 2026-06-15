@@ -1,8 +1,8 @@
 /* ── Variables (Dark Theme) ─────────────────────────────── */
 
 :root {
-  --bg-base:      #0e0e20;
-  --bg-deep:      #131328;
+  --bg-base:      #0d0a26;
+  --bg-deep:      #171042;
   --ink:          #dde5ff;
   --muted:        #6e7ea8;
   --line:         rgba(255, 255, 255, 0.09);
@@ -82,7 +82,7 @@ p {
   height: min(44vw, 560px);
   top: -10%;
   left: -6%;
-  background: rgba(91, 114, 242, 0.25);
+  background: rgba(91, 114, 242, 0.38);
 }
 
 .aura-two {
@@ -90,7 +90,7 @@ p {
   height: min(48vw, 600px);
   right: -12%;
   bottom: -16%;
-  background: rgba(139, 92, 246, 0.2);
+  background: rgba(139, 92, 246, 0.32);
 }
 
 /* ── Glass ─────────────────────────────────────────────── */
