@@ -1,8 +1,8 @@
 /* ── Variables (Dark Theme) ─────────────────────────────── */
 
 :root {
-  --bg-base:      #06060f;
-  --bg-deep:      #09091a;
+  --bg-base:      #0e0e20;
+  --bg-deep:      #131328;
   --ink:          #dde5ff;
   --muted:        #6e7ea8;
   --line:         rgba(255, 255, 255, 0.09);
