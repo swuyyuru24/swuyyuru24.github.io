@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" font-family="'Space Grotesk',system-ui,sans-serif">
+  <defs>
+    <radialGradient id="lcag1" cx="8%" cy="8%" r="50%">
+      <stop offset="0%" stop-color="#efe3c9"/>
+      <stop offset="100%" stop-color="#f5efe2"/>
+    </radialGradient>
+  </defs>
+  <!-- Warm beige background -->
+  <rect width="600" height="340" fill="url(#lcag1)" rx="12"/>
+
+  <!-- Hero -->
+  <text x="24" y="40" font-size="19" font-weight="700" fill="#12211d">US LCA Data for Software Roles</text>
+  <text x="24" y="58" font-size="10" fill="#5b6661">Weekly-refreshed Labor Condition Application data for fast state-level exploration.</text>
+
+  <!-- ===== Stat cards ===== -->
+  <rect x="24" y="72" width="176" height="52" rx="12" fill="#fffdf8" stroke="#d6cbb4"/>
+  <text x="38" y="92" font-size="9" fill="#5b6661">Rows scanned</text>
+  <text x="38" y="113" font-size="17" font-weight="700" fill="#12211d">812,440</text>
+  <rect x="212" y="72" width="176" height="52" rx="12" fill="#fffdf8" stroke="#d6cbb4"/>
+  <text x="226" y="92" font-size="9" fill="#5b6661">Software rows</text>
+  <text x="226" y="113" font-size="17" font-weight="700" fill="#0b7a5e">147,309</text>
+  <rect x="400" y="72" width="176" height="52" rx="12" fill="#fffdf8" stroke="#d6cbb4"/>
+  <text x="414" y="92" font-size="9" fill="#5b6661">States covered</text>
+  <text x="414" y="113" font-size="17" font-weight="700" fill="#12211d">53</text>
+
+  <!-- ===== Controls ===== -->
+  <text x="24" y="150" font-size="10" font-weight="600" fill="#5b6661">State</text>
+  <rect x="24" y="158" width="180" height="30" rx="10" fill="#fffdf8" stroke="#d6cbb4"/>
+  <text x="38" y="178" font-family="'IBM Plex Mono',monospace" font-size="11" fill="#12211d">California (CA)</text>
+  <text x="192" y="178" text-anchor="end" font-size="11" fill="#5b6661">▾</text>
+  <rect x="214" y="158" width="160" height="30" rx="10" fill="#0b7a5e"/>
+  <text x="294" y="178" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="11" fill="#ffffff">Load State Details</text>
+
+  <!-- ===== State Details table ===== -->
+  <rect x="24" y="200" width="552" height="116" rx="12" fill="#fffdf8" stroke="#d6cbb4"/>
+  <text x="40" y="222" font-size="12" font-weight="700" fill="#12211d">State Details</text>
+  <!-- column headers -->
+  <text x="40" y="244" font-family="'IBM Plex Mono',monospace" font-size="9" font-weight="600" fill="#5b6661">CASE #</text>
+  <text x="150" y="244" font-family="'IBM Plex Mono',monospace" font-size="9" font-weight="600" fill="#5b6661">EMPLOYER</text>
+  <text x="330" y="244" font-family="'IBM Plex Mono',monospace" font-size="9" font-weight="600" fill="#5b6661">TITLE</text>
+  <text x="556" y="244" text-anchor="end" font-family="'IBM Plex Mono',monospace" font-size="9" font-weight="600" fill="#5b6661">WAGE FROM</text>
+  <line x1="40" y1="250" x2="560" y2="250" stroke="#e7dcc6"/>
+  <!-- row 1 (hover highlight) -->
+  <rect x="32" y="256" width="536" height="18" rx="6" fill="#cce7df"/>
+  <text x="40" y="269" font-size="9.5" fill="#12211d">I-200-24…1A</text>
+  <text x="150" y="269" font-size="9.5" fill="#12211d">Google LLC</text>
+  <text x="330" y="269" font-size="9.5" fill="#12211d">Software Engineer III</text>
+  <text x="556" y="269" text-anchor="end" font-size="9.5" fill="#12211d">$172,000</text>
+  <!-- row 2 -->
+  <text x="40" y="289" font-size="9.5" fill="#12211d">I-200-24…7B</text>
+  <text x="150" y="289" font-size="9.5" fill="#12211d">Meta Platforms</text>
+  <text x="330" y="289" font-size="9.5" fill="#12211d">Backend Engineer</text>
+  <text x="556" y="289" text-anchor="end" font-size="9.5" fill="#12211d">$185,500</text>
+  <!-- row 3 -->
+  <text x="40" y="309" font-size="9.5" fill="#12211d">I-200-24…3C</text>
+  <text x="150" y="309" font-size="9.5" fill="#12211d">Stripe Inc</text>
+  <text x="330" y="309" font-size="9.5" fill="#12211d">Full-Stack Engineer</text>
+  <text x="556" y="309" text-anchor="end" font-size="9.5" fill="#12211d">$168,000</text>
+</svg>
