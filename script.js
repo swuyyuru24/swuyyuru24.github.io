@@ -229,7 +229,7 @@ const COMMANDS = {
       case "experience":
         tPrint('  [1]  <span class="t-accent">Qued Inc.</span>           Software Engineer           Aug 2024–Present');
         tPrint('  [2]  <span class="t-accent">Astek Diagnostics</span>   Software Developer Intern   Jun–Dec 2023');
-        tPrint('  [3]  <span class="t-accent">Infosys Ltd.</span>        Associate Software Engineer Jun 2020–Jul 2022');
+        tPrint('  [3]  <span class="t-accent">Infosys Ltd.</span>        Associate Software Engineer Dec 2020–Jul 2022');
         break;
       case "projects":
         tPrint('  [1]  <span class="t-accent">Centsible</span>                        Next.js · Supabase · Plaid API · TypeScript');
